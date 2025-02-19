@@ -4,17 +4,17 @@ import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
 
 export const metadata: Metadata = {
-  title: "Next.js Enterprise Boilerplate",
+  title: "BACH Protocol",
   twitter: {
     card: "summary_large_image",
   },
   openGraph: {
-    url: "https://next-enterprise.vercel.app/",
+    url: "https://bach.money/",
     images: [
       {
         width: 1200,
         height: 630,
-        url: "https://raw.githubusercontent.com/Blazity/next-enterprise/main/.github/assets/project-logo.png",
+        url: "https://station.jup.ag/assets/images/full-routing-banner-98ca8b117cc86aa7d4fadf45b56d5a7c.png",
       },
     ],
   },
@@ -27,21 +27,24 @@ export default function Web() {
         <div className="mx-auto grid max-w-(--breakpoint-xl) px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
             <h1 className="mb-4 max-w-2xl text-4xl leading-none font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white">
-              Next.js Enterprise Boilerplate
+              BACH Protocol
             </h1>
             <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
-              Jumpstart your enterprise project with our feature-packed, high-performance Next.js boilerplate!
-              Experience rapid UI development, AI-powered code reviews, and an extensive suite of tools for a smooth and
-              enjoyable development process.
+              The BACH Protocol is a decentralized autonomous organization (DAO) built on the Solana blockchain,
+              designed to revolutionize the global music industry and its derivatives through community-driven
+              governance, transparency, and innovation. By leveraging Solana's high-speed, low-cost infrastructure, BACH
+              Protocol empowers fans, artists, and industry stakeholders to collaborate, create, and monetize music in a
+              decentralized ecosystem.
             </p>
-            <Button href="https://github.com/Blazity/next-enterprise" className="mr-3">
-              Get started
-            </Button>
             <Button
-              href="https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise"
-              intent="secondary"
+              href="https://www.birdeye.so/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
+              className="mr-3"
+              intent="primary"
             >
-              Deploy Now
+              Get €BACH
+            </Button>
+            <Button href="https://solscan.io/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf" intent="secondary">
+              Scan
             </Button>
           </div>
         </div>
@@ -58,6 +61,13 @@ export default function Web() {
                 <p className="text-gray-500 dark:text-gray-400">{singleItem.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-red-500 dark:bg-gray-900">
+        <div className="mx-auto max-w-(--breakpoint-xl) px-4 py-8 sm:py-16 lg:px-6">
+          <div className="flex flex-col items-center justify-center text-center">
+            Always do your own research and never invest more than you can afford to lose. Crypto investments are highly volatile and risky.
           </div>
         </div>
       </section>
