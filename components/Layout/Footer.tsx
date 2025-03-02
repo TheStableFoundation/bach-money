@@ -10,7 +10,7 @@ export default function Footer() {
             <a href="https://bach.money/" className="flex items-center">
               <Image
                 src="https://raw.githubusercontent.com/solana-labs/token-list/badd1dbe8c2d1e38c4f77b77f1d5fd5c60d3cccb/assets/mainnet/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf/bach-token-logo-Est.2022.png"
-                className="me-3 h-8"
+                className="me-3"
                 width={40}
                 height={60}
                 alt="Bach Money Logo"

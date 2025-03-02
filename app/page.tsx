@@ -1,11 +1,15 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 
-import { LP_GRID_ITEMS } from "lp-items"
 import Footer from "components/Layout/Footer"
+import { LP_GRID_ITEMS } from "lp-items"
+import Image from "next/image"
+import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "BACH Protocol",
+  title: "BACH Money - The BACH Protocol Foundation",
+  description:
+    "The BACH Protocol is a decentralized autonomous organization (DAO) built on the Solana blockchain, designed to revolutionize the global music industry and its derivatives through community-driven governance, transparency, and innovation.",
   twitter: {
     card: "summary_large_image",
   },
@@ -28,25 +32,15 @@ export default function Web() {
         <div className="mx-auto grid max-w-(--breakpoint-xl) px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
             <h1 className="mb-4 max-w-2xl text-4xl leading-none font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white">
-              BACH Protocol
+              BACH Money
             </h1>
             <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
-              The BACH Protocol is a decentralized autonomous organization (DAO) built on the Solana blockchain,
-              designed to revolutionize the global music industry and its derivatives through community-driven
-              governance, transparency, and innovation. By leveraging Solana's high-speed, low-cost infrastructure, BACH
-              Protocol empowers fans, artists, and industry stakeholders to collaborate, create, and monetize music in a
-              decentralized ecosystem.
+              The BACH Money, governed by the BACH Protocol Foundation, is a decentralized autonomous organization (DAO)
+              built on the Solana blockchain, designed to revolutionize the global music industry and its derivatives
+              through community-driven governance, transparency, and innovation. By leveraging Solana's high-speed,
+              low-cost infrastructure, BACH Protocol empowers fans, artists, and industry stakeholders to collaborate,
+              create, and monetize music in a decentralized ecosystem.
             </p>
-            <Button
-              href="https://www.birdeye.so/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
-              className="mr-3"
-              intent="primary"
-            >
-              Get €BACH
-            </Button>
-            <Button href="https://solscan.io/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf" intent="secondary">
-              Scan
-            </Button>
           </div>
         </div>
       </section>
@@ -65,10 +59,30 @@ export default function Web() {
           </div>
         </div>
       </section>
+      <section className="bg-white dark:bg-gray-900">
+        <div className="mx-auto max-w-(--breakpoint-xl) px-4 py-8 sm:py-16 lg:px-6">
+          <div className="flex gap-6 items-center justify-center text-center">
+            <Link
+              href="https://www.birdeye.so/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
+              className="mr-3"
+              target="_blank"
+            >
+              <Image src={"/birdeye/Birdeye-Logo_Black-full-logo-400x400.png"} width={200} height={200} alt="Birdeye Logo" />
+            </Link>
+            <Link href="https://jup.ag/tokens/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf" target="_blank">
+              <Image src={"/jupiter/logo-with-text-bright.svg"} width={200} height={200} alt="Jupiter Logo" />
+            </Link>
+
+          </div>
+        </div>
+      </section>
       <section className="bg-red-500 dark:bg-gray-900">
         <div className="mx-auto max-w-(--breakpoint-xl) px-4 py-8 sm:py-16 lg:px-6">
           <div className="flex flex-col items-center justify-center text-center">
-            Always do your own research and never invest more than you can afford to lose. Crypto investments are highly volatile and risky.
+            <p className="my-3.5">Always do your own research and never invest more than you can afford to lose. Crypto investments are highly
+            volatile and risky.
+            </p>
+            <p>Not available for US/UK citizens.</p>
           </div>
         </div>
       </section>

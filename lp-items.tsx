@@ -20,8 +20,8 @@ export const LP_GRID_ITEMS = [
     ),
   },
   {
-    title: "Made in EU",
-    description: "Developed in the European Union with strict data protection laws.",
+    title: "Build in EU",
+    description: "Developed in the European Union with strict regulation and data protection laws.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export const LP_GRID_ITEMS = [
   },
   {
     title: "Liquid",
-    description: "Trade your assets with ease and confidence from four different liquidy pools.",
+    description: "Trade your assets with ease and confidence from more than 8 different liquidy pools.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
