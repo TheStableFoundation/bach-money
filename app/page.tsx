@@ -79,10 +79,9 @@ export default function Web() {
       <section className="bg-red-500 dark:bg-gray-900">
         <div className="mx-auto max-w-(--breakpoint-xl) px-4 py-8 sm:py-16 lg:px-6">
           <div className="flex flex-col items-center justify-center text-center">
-            <p className="my-3.5">Always do your own research and never invest more than you can afford to lose. Crypto investments are highly
-            volatile and risky.
-            </p>
-            <p>Not available for US/UK citizens.</p>
+            <p className="my-3.5">Always do your own research and never invest more than you can afford to lose.</p>
+            <p className="my-3.5">Crypto investments are highly volatile and risky.</p>
+            <p className="my-3.5">Not available for US/UK citizens.</p>
           </div>
         </div>
       </section>

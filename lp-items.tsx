@@ -20,7 +20,7 @@ export const LP_GRID_ITEMS = [
     ),
   },
   {
-    title: "Build in EU",
+    title: "Built in EU",
     description: "Developed in the European Union with strict regulation and data protection laws.",
     icon: (
       <svg
