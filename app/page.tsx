@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 
 import { LP_GRID_ITEMS } from "lp-items"
+import Footer from "components/Layout/Footer"
 
 export const metadata: Metadata = {
   title: "BACH Protocol",
@@ -71,6 +72,7 @@ export default function Web() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   )
 }

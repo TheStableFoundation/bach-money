@@ -10,6 +10,9 @@ const config: NextConfig = {
       fullUrl: true,
     },
   },
+  images: {
+    domains: ["raw.githubusercontent.com"],
+  },
   rewrites: async () => [
     { source: "/healthz", destination: "/api/health" },
     { source: "/api/healthz", destination: "/api/health" },
