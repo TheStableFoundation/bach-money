@@ -79,6 +79,9 @@ export default function Web() {
       <section className="bg-red-500 dark:bg-gray-900">
         <div className="mx-auto max-w-(--breakpoint-xl) px-4 py-8 sm:py-16 lg:px-6">
           <div className="flex flex-col items-center justify-center text-center">
+            <h3 className="mb-2 text-xl font-bold dark:text-white">Disclaimer</h3>
+            <p className="my-3.5">This is not financial advice.</p>
+            <p className="my-3.5">The information provided on this website is for informational purposes only.</p>
             <p className="my-3.5">Always do your own research and never invest more than you can afford to lose.</p>
             <p className="my-3.5">Crypto investments are highly volatile and risky.</p>
             <p className="my-3.5">Not available for US/UK citizens.</p>
