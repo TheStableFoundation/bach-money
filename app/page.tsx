@@ -60,20 +60,39 @@ export default function Web() {
         </div>
       </section>
       <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-(--breakpoint-xl) px-4 py-8 sm:py-16 lg:px-6">
-          <div className="flex gap-6 items-center justify-center text-center">
-            <Link
-              href="https://www.birdeye.so/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
-              className="mr-3"
-              target="_blank"
-            >
-              <Image src={"/birdeye/Birdeye-Logo_Black-full-logo-400x400.png"} width={200} height={200} alt="Birdeye Logo" />
-            </Link>
-            <Link href="https://jup.ag/tokens/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf" target="_blank">
-              <Image src={"/jupiter/logo-with-text-bright.svg"} width={200} height={200} alt="Jupiter Logo" />
-            </Link>
-
-          </div>
+        <div className="mx-auto max-w-(--breakpoint-xl)">
+          <div className="flex flex-col items-center justify-center text-center"></div>
+        </div>
+      </section>
+      <section className="bg-white dark:bg-gray-900">
+        <div className="mx-auto mt-6 flex max-w-(--breakpoint-xl) flex-col items-center justify-center px-4 text-center lg:px-6">
+          <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
+            €BACH is the governance token of the BACH Protocol Foundation (the DAO). It is used to vote on proposals and
+            to participate in the DAO's decision-making process.
+          </p>
+          <iframe
+            width="100%"
+            height="600"
+            src="https://birdeye.so/tv-widget/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf?chain=solana&viewMode=pair&chartInterval=15&chartType=Candle&chartTimezone=Europe%2FStockholm&chartLeftToolbar=show&theme=light"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className="flex items-center justify-center gap-2 text-center">
+          <Link
+            href="https://www.birdeye.so/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
+            className="mr-3"
+            target="_blank"
+          >
+            <Image
+              src={"/birdeye/Birdeye-Logo_Black-full-logo-400x400.png"}
+              width={100}
+              height={100}
+              alt="Birdeye Logo"
+            />
+          </Link>
+          <Link href="https://jup.ag/tokens/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf" target="_blank">
+            <Image src={"/jupiter/logo-with-text-bright.svg"} width={100} height={100} alt="Jupiter Logo" />
+          </Link>
         </div>
       </section>
       <section className="bg-red-500 dark:bg-gray-900">
