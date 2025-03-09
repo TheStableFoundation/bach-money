@@ -41,7 +41,7 @@ export const LP_GRID_ITEMS = [
   },
   {
     title: "Liquid",
-    description: "Trade your assets with ease and confidence from more than 8 different liquidy pools.",
+    description: "More than ten different liquidy pools from the community.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -11,7 +11,13 @@ const config: NextConfig = {
     },
   },
   images: {
-    domains: ["raw.githubusercontent.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+        pathname: "/",
+      },
+    ],
   },
   rewrites: async () => [
     { source: "/healthz", destination: "/api/health" },

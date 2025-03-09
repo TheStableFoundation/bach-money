@@ -28,19 +28,28 @@ export const metadata: Metadata = {
 export default function Web() {
   return (
     <>
+      <section className="bg-red-500 dark:bg-gray-900">
+        <div className="mx-auto max-w-(--breakpoint-xl) px-2 py-2">
+          <div className="flex flex-col items-center justify-center text-center">
+            <h3 className="mb-2 text-xl font-bold dark:text-white">Disclaimer</h3>
+            <p className="my-1">This is not financial advice.</p>
+            <p className="my-1">The information provided on this website is for informational purposes only.</p>
+            <p className="my-1">Always do your own research and never invest more than you can afford to lose.</p>
+            <p className="my-1">Crypto investments are highly volatile and risky.</p>
+            <p className="my-1">Please leave this website immediately if you are US/UK citizens.</p>
+          </div>
+        </div>
+      </section>
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto grid max-w-(--breakpoint-xl) px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
             <h1 className="mb-4 max-w-2xl text-4xl leading-none font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white">
               BACH Money
             </h1>
-            <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
-              The BACH Money, governed by the BACH Protocol Foundation, is a decentralized autonomous organization (DAO)
-              built on the Solana blockchain, designed to revolutionize the global music industry and its derivatives
-              through community-driven governance, transparency, and innovation. By leveraging Solana's high-speed,
-              low-cost infrastructure, BACH Protocol empowers fans, artists, and industry stakeholders to collaborate,
-              create, and monetize music in a decentralized ecosystem.
-            </p>
+            <h2 className="mb-4 text-2xl">A decentralized stablecoin platform.</h2>
+            <Link href="/whitepaper" className="text-xl inline-block">
+              Whitepaper
+            </Link>
           </div>
         </div>
       </section>
@@ -93,18 +102,6 @@ export default function Web() {
           <Link href="https://jup.ag/tokens/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf" target="_blank">
             <Image src={"/jupiter/logo-with-text-bright.svg"} width={100} height={100} alt="Jupiter Logo" />
           </Link>
-        </div>
-      </section>
-      <section className="bg-red-500 dark:bg-gray-900">
-        <div className="mx-auto max-w-(--breakpoint-xl) px-4 py-8 sm:py-16 lg:px-6">
-          <div className="flex flex-col items-center justify-center text-center">
-            <h3 className="mb-2 text-xl font-bold dark:text-white">Disclaimer</h3>
-            <p className="my-3.5">This is not financial advice.</p>
-            <p className="my-3.5">The information provided on this website is for informational purposes only.</p>
-            <p className="my-3.5">Always do your own research and never invest more than you can afford to lose.</p>
-            <p className="my-3.5">Crypto investments are highly volatile and risky.</p>
-            <p className="my-3.5">Not available for US/UK citizens.</p>
-          </div>
         </div>
       </section>
       <Footer />

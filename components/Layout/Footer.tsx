@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 
 export default function Footer() {
@@ -15,7 +14,6 @@ export default function Footer() {
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
-                <li>Work in progress.</li>
                 <li>We love open source ❤️</li>
               </ul>
             </div>
@@ -24,7 +22,7 @@ export default function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © {new Date().getFullYear()} Bach Protocol Foundation. Deployed with on{" "}
+            © {new Date().getFullYear()} Bach Protocol Foundation. Runs on{" "}
             <a href="https://smbcloud.xyz/" className="hover:underline" target="_blank" rel="noopener noreferrer">
               smbCloud
             </a>
