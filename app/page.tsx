@@ -1,15 +1,14 @@
 import { Metadata } from "next"
-import { Button } from "components/Button/Button"
 
-import Footer from "components/Layout/Footer"
-import { LP_GRID_ITEMS } from "lp-items"
 import Image from "next/image"
 import Link from "next/link"
+import Footer from "components/Layout/Footer"
+import { LP_GRID_ITEMS } from "lp-items"
 
 export const metadata: Metadata = {
-  title: "BACH Money - The BACH Protocol Foundation",
+  title: "BACH Money - A decentralized stablecoin platform",
   description:
-    "The BACH Protocol is a decentralized autonomous organization (DAO) built on the Solana blockchain, designed to revolutionize the global music industry and its derivatives through community-driven governance, transparency, and innovation.",
+    "The Stable Foundation is a decentralized autonomous organization (DAO) built on the Solana blockchain, designed to revolutionize the global music industry and its derivatives through community-driven governance, transparency, and innovation.",
   twitter: {
     card: "summary_large_image",
   },
@@ -28,18 +27,6 @@ export const metadata: Metadata = {
 export default function Web() {
   return (
     <>
-      <section className="bg-red-500 dark:bg-gray-900">
-        <div className="mx-auto max-w-(--breakpoint-xl) px-2 py-2">
-          <div className="flex flex-col items-center justify-center text-center">
-            <h3 className="mb-2 text-xl font-bold dark:text-white">Disclaimer</h3>
-            <p className="my-1">This is not financial advice.</p>
-            <p className="my-1">The information provided on this website is for informational purposes only.</p>
-            <p className="my-1">Always do your own research and never invest more than you can afford to lose.</p>
-            <p className="my-1">Crypto investments are highly volatile and risky.</p>
-            <p className="my-1">Please leave this website immediately if you are US/UK citizens.</p>
-          </div>
-        </div>
-      </section>
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto grid max-w-(--breakpoint-xl) px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
@@ -47,7 +34,7 @@ export default function Web() {
               BACH Money
             </h1>
             <h2 className="mb-4 text-2xl">A decentralized stablecoin platform.</h2>
-            <Link href="/whitepaper" className="text-xl inline-block">
+            <Link href="/whitepaper" className="inline-block text-xl">
               Whitepaper
             </Link>
           </div>
@@ -76,8 +63,8 @@ export default function Web() {
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto mt-6 flex max-w-(--breakpoint-xl) flex-col items-center justify-center px-4 text-center lg:px-6">
           <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
-            €BACH is the governance token of the BACH Protocol Foundation (the DAO). It is used to vote on proposals and
-            to participate in the DAO's decision-making process.
+            €BACH is the deflationary governance token of The Stable Foundation (the DAO). It is used to vote on
+            proposals and to participate in the DAO's decision-making process.
           </p>
           <iframe
             width="100%"
@@ -102,6 +89,18 @@ export default function Web() {
           <Link href="https://jup.ag/tokens/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf" target="_blank">
             <Image src={"/jupiter/logo-with-text-bright.svg"} width={100} height={100} alt="Jupiter Logo" />
           </Link>
+        </div>
+      </section>
+      <section className="bg-red-400 dark:bg-gray-900">
+        <div className="mx-auto max-w-(--breakpoint-xl) px-2 py-2">
+          <div className="flex flex-col items-center justify-center text-center my-10">
+            <h3 className="mb-2 text-xl font-bold dark:text-white">Disclaimer</h3>
+            <p className="my-1">This is not financial advice.</p>
+            <p className="my-1">The information provided on this website is for informational purposes only.</p>
+            <p className="my-1">Always do your own research and never invest more than you can afford to lose.</p>
+            <p className="my-1">Crypto investments are highly volatile and risky.</p>
+            <p className="my-1">Please leave this website immediately if you are US/UK citizens.</p>
+          </div>
         </div>
       </section>
       <Footer />

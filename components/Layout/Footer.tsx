@@ -9,12 +9,27 @@ export default function Footer() {
             <a href="https://bach.money/" className="flex items-center">
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Bach Money</span>
             </a>
+            <p className="my-6">We love open source ❤️</p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
-                <li>We love open source ❤️</li>
+                <li className="mb-2">
+                  <Link href="/whitepaper">
+                    Whitepaper <span className="text-xs text-gray-400 dark:text-gray-500">WIP</span>
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link href="https://docs.bach.money/">
+                    Documentation <span className="text-xs text-gray-400 dark:text-gray-500">Beta</span>
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link href="https://app.bach.money/">
+                    Launch App <span className="text-xs text-gray-400 dark:text-gray-500">Beta</span>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -22,7 +37,7 @@ export default function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © {new Date().getFullYear()} Bach Protocol Foundation. Runs on{" "}
+            © {new Date().getFullYear()} The Stable Foundation. Runs on{" "}
             <a href="https://smbcloud.xyz/" className="hover:underline" target="_blank" rel="noopener noreferrer">
               smbCloud
             </a>
