@@ -21,13 +21,18 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link href="https://docs.bach.money/">
-                    Documentation <span className="text-xs text-gray-400 dark:text-gray-500">Beta</span>
+                  <Link href="https://app.bach.money/">
+                    Launch App <span className="text-xs text-gray-400 dark:text-gray-500">Beta</span>
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link href="https://app.bach.money/">
-                    Launch App <span className="text-xs text-gray-400 dark:text-gray-500">Beta</span>
+                  <Link href="https://music88.com/">
+                    Music88 <span className="text-xs text-gray-400 dark:text-gray-500">Beta</span>
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link href="https://docs.bach.money/">
+                    Documentation <span className="text-xs text-gray-400 dark:text-gray-500">Beta</span>
                   </Link>
                 </li>
               </ul>
