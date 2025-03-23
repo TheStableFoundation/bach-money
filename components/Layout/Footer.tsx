@@ -26,7 +26,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link href="https://music88.com/">
+                  <Link href="https://musik88.com/">
                     Music88 <span className="text-xs text-gray-400 dark:text-gray-500">Beta</span>
                   </Link>
                 </li>
