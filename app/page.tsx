@@ -1,9 +1,8 @@
 import { Metadata } from "next"
 
-import Image from "next/image"
-import Link from "next/link"
 import Footer from "components/Layout/Footer"
 import { LP_GRID_ITEMS } from "lp-items"
+import TimelineView from "components/Timeline"
 
 export const metadata: Metadata = {
   title: "BACH Money - A decentralized stablecoin platform",
@@ -34,14 +33,11 @@ export default function Web() {
               BACH Money
             </h1>
             <h2 className="mb-4 text-2xl">A decentralized stablecoin platform.</h2>
-            <Link href="/whitepaper" className="inline-block text-xl">
-              Whitepaper
-            </Link>
           </div>
         </div>
       </section>
       <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-(--breakpoint-xl) px-4 py-8 sm:py-16 lg:px-6">
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
             {LP_GRID_ITEMS.map((singleItem) => (
               <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
@@ -56,50 +52,27 @@ export default function Web() {
         </div>
       </section>
       <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-(--breakpoint-xl)">
-          <div className="flex flex-col items-center justify-center text-center"></div>
-        </div>
-      </section>
-      <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto mt-6 flex max-w-(--breakpoint-xl) flex-col items-center justify-center px-4 text-center lg:px-6">
           <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
-            €BACH is the deflationary governance token of The Stable Foundation (the DAO). It is used to vote on
-            proposals and to participate in the DAO's decision-making process.
+            €BACH token is a <span className="font-bold text-red-600 italic">fixed-supply deflationary</span> governance
+            token of The Stable Foundation (the DAO). The DAO uses it to{" "}
+            <span className="font-bold text-red-600 italic">vote on proposals</span> and to participate in the DAO's
+            decision-making process.
           </p>
-          <iframe
-            width="100%"
-            height="600"
-            src="https://birdeye.so/tv-widget/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf?chain=solana&viewMode=pair&chartInterval=15&chartType=Candle&chartTimezone=Europe%2FStockholm&chartLeftToolbar=show&theme=light"
-            allowFullScreen
-          ></iframe>
         </div>
-        <div className="flex items-center justify-center gap-2 text-center">
-          <Link
-            href="https://www.birdeye.so/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
-            className="mr-3"
-            target="_blank"
-          >
-            <Image
-              src={"/birdeye/Birdeye-Logo_Black-full-logo-400x400.png"}
-              width={100}
-              height={100}
-              alt="Birdeye Logo"
-            />
-          </Link>
-          <Link href="https://jup.ag/tokens/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf" target="_blank">
-            <Image src={"/jupiter/logo-with-text-bright.svg"} width={100} height={100} alt="Jupiter Logo" />
-          </Link>
+        <div className="mx-auto mt-6 flex max-w-(--breakpoint-xl) flex-col items-center justify-center px-4 text-center lg:px-6">
+          <TimelineView />
         </div>
       </section>
       <section className="bg-red-400 dark:bg-gray-900">
         <div className="mx-auto max-w-(--breakpoint-xl) px-2 py-2">
-          <div className="flex flex-col items-center justify-center text-center my-10">
+          <div className="my-10 flex flex-col items-center justify-center text-center">
             <h3 className="mb-2 text-xl font-bold dark:text-white">Disclaimer</h3>
-            <p className="my-1">This is not financial advice.</p>
-            <p className="my-1">The information provided on this website is for informational purposes only.</p>
-            <p className="my-1">Always do your own research and never invest more than you can afford to lose.</p>
-            <p className="my-1">Crypto investments are highly volatile and risky.</p>
-            <p className="my-1">Please leave this website immediately if you are US/UK citizens.</p>
+            <p className="my-1">
+              This is not financial advice. The information provided on this website is for informational purposes only.
+              Always do your own research and never invest more than you can afford to lose. Crypto investments are
+              highly volatile and risky.
+            </p>
           </div>
         </div>
       </section>

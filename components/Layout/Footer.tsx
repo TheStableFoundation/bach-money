@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -9,30 +10,58 @@ export default function Footer() {
             <a href="https://bach.money/" className="flex items-center">
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Bach Money</span>
             </a>
-            <p className="my-6">We love open source ❤️</p>
+            <p className="mt-6">We love open source ❤️</p>
+            <Link
+              href="https://www.birdeye.so/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
+              className="mr-3"
+              target="_blank"
+            >
+              <Image
+                src={"/birdeye/Birdeye-Logo_Black-full-logo-400x400.png"}
+                width={100}
+                height={100}
+                alt="Birdeye Logo"
+              />
+            </Link>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
+
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6 lg:gap-4">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
                 <li className="mb-2">
                   <Link href="/whitepaper">
-                    Whitepaper <span className="text-xs text-gray-400 dark:text-gray-500">WIP</span>
+                    Whitepaper <span className="text-xs text-red-400 dark:text-red-500">WIP</span>
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link href="https://app.bach.money/">
-                    Launch App <span className="text-xs text-gray-400 dark:text-gray-500">Beta</span>
+                  <Link href="https://docs.bach.money/" target="_blank" rel="noopener noreferrer">
+                    Documentation <span className="text-xs text-red-400 dark:text-red-500">WIP</span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Ecosystem</h2>
+              <ul className="font-medium text-gray-500 dark:text-gray-400">
+                <li className="mb-2">
+                  <Link href="https://stats.bach.money/" target="_blank" rel="noopener noreferrer">
+                    Stats <span className="text-xs text-red-400 dark:text-red-500">WIP</span>
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link href="https://musik88.com/">
-                    Music88 <span className="text-xs text-gray-400 dark:text-gray-500">Beta</span>
+                  <Link href="https://app.bach.money/" target="_blank" rel="noopener noreferrer">
+                    Launch dApp <span className="text-xs text-red-400 dark:text-red-500">WIP</span>
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link href="https://docs.bach.money/">
-                    Documentation <span className="text-xs text-gray-400 dark:text-gray-500">Beta</span>
+                  <Link href="https://api.musik88.com/login" target="_blank" rel="noopener noreferrer">
+                    Universe API <span className="text-xs text-red-400 dark:text-red-500">Beta</span>
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link href="https://musik88.com" target="_blank" rel="noopener noreferrer">
+                    Universe UI <span className="text-xs text-red-400 dark:text-red-500">Beta</span>
                   </Link>
                 </li>
               </ul>
@@ -42,15 +71,20 @@ export default function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © {new Date().getFullYear()} The Stable Foundation. Runs on{" "}
-            <a href="https://smbcloud.xyz/" className="hover:underline" target="_blank" rel="noopener noreferrer">
+            © {new Date().getFullYear()} The Stable Foundation. Powered by{" "}
+            <a
+              href="https://smbcloud.xyz/"
+              className="text-red-600 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               smbCloud
             </a>
             . All Rights Reserved.
           </span>
           <div className="mt-4 flex sm:mt-0 sm:justify-center">
             <a
-              href="https://github.com/BACHMoney"
+              href="https://github.com/TheStableFoundation"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               target="_blank"
               rel="noopener noreferrer"

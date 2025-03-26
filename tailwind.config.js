@@ -1,9 +1,10 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const defaultTheme = require("tailwindcss/defaultTheme")
 const flowbite = require("flowbite-react/tailwind");
+const withMT = require("@material-tailwind/react/utils/withMT");
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = withMT({
   darkMode: "class",
   content: [
     "./index.html",
@@ -89,4 +90,4 @@ module.exports = {
   future: {
     hoverOnlyWhenSupported: true,
   },
-}
+});
