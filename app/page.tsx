@@ -1,8 +1,8 @@
 import { Metadata } from "next"
 
 import Footer from "components/Layout/Footer"
-import { LP_GRID_ITEMS } from "lp-items"
 import TimelineView from "components/Timeline"
+import { LP_GRID_ITEMS } from "lp-items"
 
 export const metadata: Metadata = {
   title: "BACH Money - A decentralized stablecoin platform",
@@ -65,7 +65,7 @@ export default function Web() {
         </div>
       </section>
       <section className="bg-red-400 dark:bg-gray-900">
-        <div className="mx-auto max-w-(--breakpoint-xl) px-2 py-2">
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="my-10 flex flex-col items-center justify-center text-center">
             <h3 className="mb-2 text-xl font-bold dark:text-white">Disclaimer</h3>
             <p className="my-1">
