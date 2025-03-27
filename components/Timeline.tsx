@@ -21,7 +21,7 @@ import {
 export default function TimelineView() {
   return (
     <div className="w-[25rem]">
-      <Timeline variant="filled">
+      <Timeline>
         <TimelineItem className="h-28">
           <TimelineConnector className="!w-[78px]" />
           <TimelineHeader className="border-blue-gray-50 shadow-blue-gray-900/5 relative rounded-xl border bg-white py-3 pr-8 pl-4 shadow-lg">
