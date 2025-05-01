@@ -3,6 +3,7 @@ import { Metadata } from "next"
 import Footer from "components/Layout/Footer"
 import TimelineView from "components/Timeline"
 import { LP_GRID_ITEMS } from "lp-items"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "BACH Money - A decentralized stablecoin platform",
@@ -54,7 +55,7 @@ export default function Web() {
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto mt-6 flex max-w-(--breakpoint-xl) flex-col items-center justify-center px-4 text-center lg:px-6">
           <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
-            €BACH token is a <span className="font-bold text-red-600 italic">fixed-supply deflationary</span> governance
+            €BACH token is a <span className="font-bold text-red-600 italic"><Link href="https://explorer.solana.com/address/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf" target="_blank" rel="noopener noreferrer">fixed-supply</Link> deflationary</span> governance
             token of The Stable Foundation (the DAO). The DAO uses it to{" "}
             <span className="font-bold text-red-600 italic">vote on proposals</span> and to participate in the DAO's
             decision-making process.
