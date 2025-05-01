@@ -104,7 +104,7 @@ export default function TimelineView() {
           </TimelineHeader>
         </TimelineItem>
         <TimelineItem className="h-28">
-          <TimelineConnector className="!w-[78px] bg-red-600" />
+          <TimelineConnector className="!w-[78px]" />
           <TimelineHeader className="border-blue-gray-50 shadow-blue-gray-900/5 relative rounded-xl border bg-white py-3 pr-8 pl-4 shadow-lg">
             <TimelineIcon className="p-3" variant="ghost" color="green">
               <GlobeAltIcon className="h-5 w-5" />
@@ -120,7 +120,7 @@ export default function TimelineView() {
           </TimelineHeader>
         </TimelineItem>
         <TimelineItem className="h-28">
-          <TimelineConnector className="!w-[78px] bg-red-600" />
+          <TimelineConnector className="!w-[78px]" />
           <TimelineHeader className="border-blue-gray-50 shadow-blue-gray-900/5 relative rounded-xl border bg-white py-3 pr-8 pl-4 shadow-lg">
             <TimelineIcon className="p-3" variant="ghost" color="red">
               <FireIcon className="h-5 w-5" />
@@ -136,7 +136,7 @@ export default function TimelineView() {
           </TimelineHeader>
         </TimelineItem>
         <TimelineItem className="h-28">
-          <TimelineConnector className="!w-[78px] bg-red-600" />
+          <TimelineConnector className="!w-[78px]" />
           <TimelineHeader className="border-blue-gray-50 shadow-blue-gray-900/5 relative rounded-xl border bg-white py-3 pr-8 pl-4 shadow-lg">
             <TimelineIcon className="p-3" variant="ghost" color="red">
               <FireIcon className="h-5 w-5" />
