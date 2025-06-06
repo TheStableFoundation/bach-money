@@ -161,7 +161,7 @@ export default function TimelineView() {
                 Ubiquity
               </Typography>
               <Typography variant="small" color="gray" className="font-normal">
-                USEd (dollar), USEe (euro), and other USEs stablecoins.
+                Money flows like data.™
               </Typography>
             </div>
           </TimelineHeader>
