@@ -51,7 +51,7 @@ export default function Footer() {
                 </li>
                 <li className="mb-2">
                   <Link href="https://bachmoney-stats.5mb.app/" target="_blank" rel="noopener noreferrer">
-                    Stats <span className="text-xs text-red-400 dark:text-red-500">WIP</span>
+                    Stats
                   </Link>
                 </li>
                 <li className="mb-2">
