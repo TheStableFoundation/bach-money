@@ -55,7 +55,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwind-merge": "^2.6.0",
-    "zod": "^3.25.53"
+    "zod": "^3.25.55"
   },
   "devDependencies": {
     "@babel/core": "^7.27.4",

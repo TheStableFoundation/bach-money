@@ -82,7 +82,7 @@ importers:
         version: 13.0.0(semantic-release@22.0.12(typescript@5.8.3))
       '@t3-oss/env-nextjs':
         specifier: ^0.10.1
-        version: 0.10.1(typescript@5.8.3)(zod@3.25.53)
+        version: 0.10.1(typescript@5.8.3)(zod@3.25.55)
       '@vercel/otel':
         specifier: ^1.12.0
         version: 1.12.0(@opentelemetry/api-logs@0.45.1)(@opentelemetry/api@1.7.0)(@opentelemetry/resources@1.18.1(@opentelemetry/api@1.7.0))(@opentelemetry/sdk-metrics@1.30.1(@opentelemetry/api@1.7.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.7.0))
@@ -108,8 +108,8 @@ importers:
         specifier: ^2.6.0
         version: 2.6.0
       zod:
-        specifier: ^3.25.53
-        version: 3.25.53
+        specifier: ^3.25.55
+        version: 3.25.55
     devDependencies:
       '@babel/core':
         specifier: ^7.27.4
@@ -8344,8 +8344,8 @@ packages:
     resolution: {integrity: sha512-GQHQqAopRhwU8Kt1DDM8NjibDXHC8eoh1erhGAJPEyveY9qqVeXvVikNKrDz69sHowPMorbPUrH/mx8c50eiBQ==}
     engines: {node: '>=18'}
 
-  zod@3.25.53:
-    resolution: {integrity: sha512-BKOKoY3XcGUVkqaalCtFK15LhwR0G0i65AClFpWSXLN2gJNBGlTktukHgwexCTa/dAacPPp9ReryXPWyeZF4LQ==}
+  zod@3.25.55:
+    resolution: {integrity: sha512-219huNnkSLQnLsQ3uaRjXsxMrVm5C9W3OOpEVt2k5tvMKuA8nBSu38e0B//a+he9Iq2dvmk2VyYVlHqiHa4YBA==}
 
 snapshots:
 
@@ -11623,16 +11623,16 @@ snapshots:
     dependencies:
       '@swc/counter': 0.1.3
 
-  '@t3-oss/env-core@0.10.1(typescript@5.8.3)(zod@3.25.53)':
+  '@t3-oss/env-core@0.10.1(typescript@5.8.3)(zod@3.25.55)':
     dependencies:
-      zod: 3.25.53
+      zod: 3.25.55
     optionalDependencies:
       typescript: 5.8.3
 
-  '@t3-oss/env-nextjs@0.10.1(typescript@5.8.3)(zod@3.25.53)':
+  '@t3-oss/env-nextjs@0.10.1(typescript@5.8.3)(zod@3.25.55)':
     dependencies:
-      '@t3-oss/env-core': 0.10.1(typescript@5.8.3)(zod@3.25.53)
-      zod: 3.25.53
+      '@t3-oss/env-core': 0.10.1(typescript@5.8.3)(zod@3.25.55)
+      zod: 3.25.55
     optionalDependencies:
       typescript: 5.8.3
 
@@ -17585,4 +17585,4 @@ snapshots:
 
   yoctocolors@2.1.1: {}
 
-  zod@3.25.53: {}
+  zod@3.25.55: {}

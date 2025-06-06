@@ -45,6 +45,11 @@ export default function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Ecosystem</h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
                 <li className="mb-2">
+                  <Link href="/wallet" title="Not Wallet no-custodial Solana crypto stablecoin wallet">
+                    Non-custodial Wallet <span className="text-xs text-red-400 dark:text-red-500">Beta</span>
+                  </Link>
+                </li>
+                <li className="mb-2">
                   <Link href="https://stats.bach.money/" target="_blank" rel="noopener noreferrer">
                     Stats <span className="text-xs text-red-400 dark:text-red-500">WIP</span>
                   </Link>
