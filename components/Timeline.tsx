@@ -138,6 +138,53 @@ export default function TimelineView() {
         <TimelineItem className="h-28">
           <TimelineConnector className="!w-[78px]" />
           <TimelineHeader className="border-blue-gray-50 shadow-blue-gray-900/5 relative rounded-xl border bg-white py-3 pr-8 pl-4 shadow-lg">
+            <TimelineIcon className="p-3" variant="ghost" color="blue">
+              <CurrencyDollarIcon className="h-5 w-5" />
+            </TimelineIcon>
+            <div className="flex flex-col gap-1 text-left">
+              <Typography variant="h6" color="blue">
+                Token upgrade
+              </Typography>
+              <Typography variant="small" color="gray" className="font-normal">
+                <a
+                  href="https://spl.solana.com/token-upgrade"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-blue-600 hover:text-blue-800"
+                >
+                  SPL Token 2022 upgrade
+                </a>
+              </Typography>
+            </div>
+          </TimelineHeader>
+        </TimelineItem>
+        <TimelineItem className="h-28">
+          <TimelineConnector className="!w-[78px]" />
+          <TimelineHeader className="border-blue-gray-50 shadow-blue-gray-900/5 relative rounded-xl border bg-white py-3 pr-8 pl-4 shadow-lg">
+            <TimelineIcon className="p-3" variant="ghost" color="green">
+              <GlobeAltIcon className="h-5 w-5" />
+            </TimelineIcon>
+            <div className="flex flex-col gap-1 text-left">
+              <Typography variant="h6" color="green">
+                Not Wallet Release
+              </Typography>
+              <Typography variant="small" color="gray" className="font-normal">
+                Non-custodial Solana stablecoin wallet released.{" "}
+                <a
+                  href="https://github.com/TheStableFoundation/not"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-blue-600 hover:text-blue-800"
+                >
+                  View on GitHub
+                </a>
+              </Typography>
+            </div>
+          </TimelineHeader>
+        </TimelineItem>
+        <TimelineItem className="h-28">
+          <TimelineConnector className="!w-[78px]" />
+          <TimelineHeader className="border-blue-gray-50 shadow-blue-gray-900/5 relative rounded-xl border bg-white py-3 pr-8 pl-4 shadow-lg">
             <TimelineIcon className="p-3" variant="ghost" color="red">
               <FireIcon className="h-5 w-5" />
             </TimelineIcon>
