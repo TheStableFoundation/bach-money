@@ -27,6 +27,16 @@ export const metadata: Metadata = {
 export default function Web() {
   return (
     <>
+      <section className="bg-yellow-100 border-b-2 border-yellow-300 dark:bg-yellow-900">
+        <div className="mx-auto flex max-w-screen-xl items-center justify-center px-4 py-4 text-center">
+          <Link
+            href="/airdrop"
+            className="inline-block rounded-lg bg-yellow-300 px-5 py-2 font-semibold text-yellow-900 shadow hover:bg-yellow-400 transition"
+          >
+            🎉 BACH Token Airdrop: Claim up to 10.99 BACH to your NotWallet! &rarr;
+          </Link>
+        </div>
+      </section>
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto grid max-w-(--breakpoint-xl) px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">

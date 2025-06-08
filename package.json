@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env FORCE_COLOR=1 next dev --turbo",
+    "dev": "cross-env FORCE_COLOR=1 next dev --turbo -p 2464",
     "build": "next build",
     "start-bachmoney": "next start -p 3013",
     "lint": "next lint",
