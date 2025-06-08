@@ -30,6 +30,11 @@ export default function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
                 <li className="mb-2">
+                  <Link href="/about">
+                    About
+                  </Link>
+                </li>
+                <li className="mb-2">
                   <Link href="/whitepaper">
                     Whitepaper <span className="text-xs text-red-400 dark:text-red-500">WIP</span>
                   </Link>
@@ -110,7 +115,7 @@ export default function Footer() {
               <span className="sr-only">GitHub</span>
             </a>
             <a
-              href="https://discord.gg/7wm5fzF6"
+              href="https://www.linkedin.com/company/thestablefoundation/about/"
               className="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
               target="_blank"
               rel="noopener noreferrer"
@@ -120,11 +125,11 @@ export default function Footer() {
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
-                viewBox="0 0 21 16"
+                viewBox="0 0 24 24"
               >
-                <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.29h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/>
               </svg>
-              <span className="sr-only">Discord community</span>
+              <span className="sr-only">LinkedIn</span>
             </a>
           </div>
         </div>
