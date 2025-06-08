@@ -1,9 +1,9 @@
 import { Metadata } from "next"
 
+import Link from "next/link"
 import Footer from "components/Layout/Footer"
 import TimelineView from "components/Timeline"
 import { LP_GRID_ITEMS } from "lp-items"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "BACH Money - A decentralized stablecoin platform",

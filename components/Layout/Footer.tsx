@@ -35,6 +35,11 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li className="mb-2">
+                  <Link href="/privacy-policy">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li className="mb-2">
                   <Link href="/whitepaper">
                     Whitepaper <span className="text-xs text-red-400 dark:text-red-500">WIP</span>
                   </Link>
