@@ -58,6 +58,27 @@ export default function WalletPage() {
           Your keys, your coins.
         </p>
         <a
+          href="https://testflight.apple.com/join/UpvJyCQY"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "inline-block",
+            padding: "0.75rem 1.5rem",
+            background: "#a3be8c",
+            color: "#eceff4",
+            borderRadius: "0.75rem",
+            fontWeight: 600,
+            textDecoration: "none",
+            marginBottom: "1rem",
+            transition: "background 0.2s",
+          }}
+        >
+          Try Public Beta (iOS)
+        </a>
+        <div style={{ marginBottom: "2rem", color: "#4c566a", fontSize: "1rem" }}>
+          or build from source:
+        </div>
+        <a
           href="https://github.com/TheStableFoundation/not"
           target="_blank"
           rel="noopener noreferrer"

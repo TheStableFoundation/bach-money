@@ -2,7 +2,6 @@ import { Metadata } from "next"
 
 import Link from "next/link"
 import Footer from "components/Layout/Footer"
-import TimelineView from "components/Timeline"
 import { LP_GRID_ITEMS } from "lp-items"
 
 export const metadata: Metadata = {
@@ -39,11 +38,27 @@ export default function Web() {
       </section>
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto grid max-w-(--breakpoint-xl) px-4 py-8 text-center lg:py-16">
-          <div className="mx-auto place-self-center">
-            <h1 className="mb-4 max-w-2xl text-4xl leading-none font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white">
+          <div className="mx-auto place-self-center flex flex-col items-center justify-center">
+            <h1 className="mb-4 max-w-2xl text-4xl leading-none font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white text-center">
               BACH Money
             </h1>
-            <h2 className="mb-4 text-2xl">A decentralized stablecoin platform.</h2>
+            <h2 className="mb-4 text-2xl text-center">A decentralized stablecoin platform.</h2>
+            <p className="text-center">
+              Governed by{" "}
+              <a
+                href="https://solscan.io/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-blue-700 font-semibold"
+              >
+                €BACH token
+              </a>
+              , a{" "}
+              <span className="font-bold text-red-600 italic underline">
+                fixed-supply deflationary
+              </span>{" "}
+              governance token of The Stable Foundation (the DAO).
+            </p>
           </div>
         </div>
       </section>
@@ -62,29 +77,14 @@ export default function Web() {
           </div>
         </div>
       </section>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white dark:bg-gray-900 mb-16">
         <div className="mx-auto mt-6 flex max-w-(--breakpoint-xl) flex-col items-center justify-center px-4 text-center lg:px-6">
-          <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
-            €BACH token is a <span className="font-bold text-red-600 italic"><Link href="https://explorer.solana.com/address/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf" target="_blank" rel="noopener noreferrer">fixed-supply</Link> deflationary</span> governance
-            token of The Stable Foundation (the DAO). The DAO uses it to{" "}
-            <span className="font-bold text-red-600 italic">vote on proposals</span> and to participate in the DAO's
-            decision-making process.
-          </p>
-        </div>
-        <div className="mx-auto mt-6 flex max-w-(--breakpoint-xl) flex-col items-center justify-center px-4 text-center lg:px-6">
-          <TimelineView />
-        </div>
-      </section>
-      <section className="bg-red-400 dark:bg-gray-900">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-          <div className="my-10 flex flex-col items-center justify-center text-center">
-            <h3 className="mb-2 text-xl font-bold dark:text-white">Disclaimer</h3>
-            <p className="my-1">
-              This is not financial advice. The information provided on this website is for informational purposes only.
-              Always do your own research and never invest more than you can afford to lose. Crypto investments are
-              highly volatile and risky.
-            </p>
-          </div>
+          <Link
+            href="/timeline"
+            className="inline-block rounded-lg bg-blue-100 px-5 py-2 font-semibold text-blue-900 shadow hover:bg-blue-200 transition"
+          >
+            📅 View the BACH Money Timeline
+          </Link>
         </div>
       </section>
       <Footer />

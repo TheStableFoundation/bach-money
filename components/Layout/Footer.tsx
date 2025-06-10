@@ -3,14 +3,14 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-gray-900">
+    <footer className="bg-white dark:bg-gray-900 mt-10">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="gap-6 md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://bach.money/" className="flex items-center">
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Bach Money</span>
             </a>
-            <p className="mt-6">We love open source ❤️</p>
+            <p className="mt-6">This is not financial advice. The information provided on this website is for informational purposes only.</p>
             <Link
               href="https://www.birdeye.so/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
               className="mr-3"
@@ -32,6 +32,11 @@ export default function Footer() {
                 <li className="mb-2">
                   <Link href="/about">
                     About
+                  </Link>
+                </li>
+                <li className="mb-2">
+                  <Link href="/timeline">
+                    Timeline
                   </Link>
                 </li>
                 <li className="mb-2">
@@ -85,7 +90,7 @@ export default function Footer() {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-gray-500 dark:text-gray-400 text-left block">
             © {new Date().getFullYear()} The Stable Foundation. Powered by{" "}
             <a
               href="https://smbcloud.xyz/"
@@ -97,7 +102,8 @@ export default function Footer() {
             </a>
             . All Rights Reserved.
           </span>
-          <div className="mt-4 flex sm:mt-0 sm:justify-center">
+          <div className="mt-4 flex items-center gap-4 sm:mt-0 sm:justify-end w-full sm:w-auto">
+            <span>We love open source ❤️</span>
             <a
               href="https://github.com/TheStableFoundation"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
@@ -121,7 +127,7 @@ export default function Footer() {
             </a>
             <a
               href="https://www.linkedin.com/company/thestablefoundation/about/"
-              className="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               target="_blank"
               rel="noopener noreferrer"
             >
