@@ -85,6 +85,12 @@ export default function Web() {
           >
             📅 View the BACH Money Timeline
           </Link>
+          <Link
+            href="/tokenomics"
+            className="inline-block rounded-lg bg-green-100 px-5 py-2 font-semibold text-green-900 shadow hover:bg-green-200 transition mt-4"
+          >
+            📊 View Tokenomics
+          </Link>
         </div>
       </section>
       <Footer />
