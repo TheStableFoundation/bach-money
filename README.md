@@ -14,4 +14,6 @@ pnpm dev
 
 ## Deploy on smbCloud
 
+[![Deploy to smbCloud](https://github.com/smbcloudXYZ/smbcloud-cli/blob/development/deploy.svg)](https://smbcloud.xyz)
+
 Our way to deploy this Next.js app is to use the [smbCloud](https://smbcloud.xyz/).
