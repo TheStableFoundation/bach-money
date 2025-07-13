@@ -5,11 +5,11 @@ export default function AboutPage() {
   return (
     <>
       {/* Header with back navigation */}
-      <section className="border-b border-gray-100 dark:border-gray-800">
+      <section className="border-b border-gray-100">
         <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-50 hover:text-gray-900 sm:px-0 sm:py-0 sm:hover:bg-transparent dark:text-gray-400 dark:hover:bg-gray-800/50 dark:hover:text-white"
+            className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-50 hover:text-gray-900 sm:px-0 sm:py-0 sm:hover:bg-transparent"
           >
             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
@@ -24,19 +24,19 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 sm:mb-8">
-              <span className="inline-block rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-600 sm:text-sm dark:border-gray-800 dark:bg-gray-900/50 dark:text-gray-400">
+              <span className="inline-block rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-600 sm:text-sm">
                 About Us
               </span>
             </div>
 
-            <h1 className="mb-6 text-4xl font-light tracking-tight text-gray-900 sm:mb-8 sm:text-5xl md:text-6xl dark:text-white">
+            <h1 className="mb-6 text-4xl font-light tracking-tight text-gray-900 sm:mb-8 sm:text-5xl md:text-6xl">
               The Stable
-              <span className="mt-1 block text-3xl font-extralight text-gray-500 sm:mt-2 sm:text-4xl md:text-5xl dark:text-gray-400">
+              <span className="mt-1 block text-3xl font-extralight text-gray-500 sm:mt-2 sm:text-4xl md:text-5xl">
                 Foundation
               </span>
             </h1>
 
-            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed font-light text-gray-600 sm:text-xl md:text-2xl dark:text-gray-300">
+            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed font-light text-gray-600 sm:text-xl md:text-2xl">
               A decentralized autonomous organization building next-generation stablecoin infrastructure on Solana.
             </p>
           </div>
@@ -44,26 +44,20 @@ export default function AboutPage() {
       </section>
 
       {/* Mission section */}
-      <section className="border-t border-gray-100 py-16 sm:py-20 dark:border-gray-800">
+      <section className="border-t border-gray-100 py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="text-center">
-            <h2 className="mb-8 text-2xl font-light text-gray-900 sm:text-3xl md:text-4xl dark:text-white">
-              Our Mission
-            </h2>
+            <h2 className="mb-8 text-2xl font-light text-gray-900 sm:text-3xl md:text-4xl">Our Mission</h2>
             <div className="space-y-8">
-              <p className="text-lg leading-relaxed text-gray-600 sm:text-xl dark:text-gray-300">
+              <p className="text-lg leading-relaxed text-gray-600 sm:text-xl">
                 We empower communities with transparent, decentralized, and accessible financial tools, starting with
                 stablecoins that track real-world assets. Our platform is designed to be secure, adaptable, and
                 community-driven.
               </p>
 
-              <div className="rounded-2xl border border-orange-200 bg-orange-50 p-6 sm:p-8 dark:border-orange-800/30 dark:bg-orange-900/10">
+              <div className="rounded-2xl border border-orange-200 bg-orange-50 p-6 sm:p-8">
                 <div className="mb-4">
-                  <svg
-                    className="mx-auto h-8 w-8 text-orange-600 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
+                  <svg className="mx-auto h-8 w-8 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -71,7 +65,7 @@ export default function AboutPage() {
                     />
                   </svg>
                 </div>
-                <p className="text-lg font-medium text-orange-900 dark:text-orange-100">
+                <p className="text-lg font-medium text-orange-900">
                   <strong>TL;DR:</strong> We're building a Consensys-like company on Solana, from the EU.
                 </p>
               </div>
@@ -81,16 +75,16 @@ export default function AboutPage() {
       </section>
 
       {/* Values section */}
-      <section className="border-t border-gray-100 py-16 sm:py-20 dark:border-gray-800">
+      <section className="border-t border-gray-100 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="text-center">
-            <h2 className="mb-12 text-2xl font-light text-gray-900 sm:mb-16 sm:text-3xl md:text-4xl dark:text-white">
+            <h2 className="mb-12 text-2xl font-light text-gray-900 sm:mb-16 sm:text-3xl md:text-4xl">
               What We Believe
             </h2>
 
             <div className="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-16">
               <div className="group text-center">
-                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gray-50 text-gray-400 transition-colors group-hover:bg-gray-100 sm:mb-6 sm:h-16 sm:w-16 dark:bg-gray-900/50 dark:group-hover:bg-gray-800/50">
+                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gray-50 text-gray-400 transition-colors group-hover:bg-gray-100 sm:mb-6 sm:h-16 sm:w-16">
                   <svg className="h-7 w-7 sm:h-8 sm:w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
@@ -100,16 +94,14 @@ export default function AboutPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="mb-3 text-lg font-medium text-gray-900 sm:mb-4 sm:text-xl dark:text-white">
-                  Open Source
-                </h3>
-                <p className="text-sm leading-relaxed text-gray-500 sm:text-base dark:text-gray-400">
+                <h3 className="mb-3 text-lg font-medium text-gray-900 sm:mb-4 sm:text-xl">Open Source</h3>
+                <p className="text-sm leading-relaxed text-gray-500 sm:text-base">
                   Transparency and community collaboration drive everything we build.
                 </p>
               </div>
 
               <div className="group text-center">
-                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gray-50 text-gray-400 transition-colors group-hover:bg-gray-100 sm:mb-6 sm:h-16 sm:w-16 dark:bg-gray-900/50 dark:group-hover:bg-gray-800/50">
+                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gray-50 text-gray-400 transition-colors group-hover:bg-gray-100 sm:mb-6 sm:h-16 sm:w-16">
                   <svg className="h-7 w-7 sm:h-8 sm:w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
@@ -119,16 +111,14 @@ export default function AboutPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="mb-3 text-lg font-medium text-gray-900 sm:mb-4 sm:text-xl dark:text-white">
-                  Community Governance
-                </h3>
-                <p className="text-sm leading-relaxed text-gray-500 sm:text-base dark:text-gray-400">
+                <h3 className="mb-3 text-lg font-medium text-gray-900 sm:mb-4 sm:text-xl">Community Governance</h3>
+                <p className="text-sm leading-relaxed text-gray-500 sm:text-base">
                   Decentralized decision-making puts the community at the center.
                 </p>
               </div>
 
               <div className="group text-center sm:col-span-2 lg:col-span-1">
-                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gray-50 text-gray-400 transition-colors group-hover:bg-gray-100 sm:mb-6 sm:h-16 sm:w-16 dark:bg-gray-900/50 dark:group-hover:bg-gray-800/50">
+                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gray-50 text-gray-400 transition-colors group-hover:bg-gray-100 sm:mb-6 sm:h-16 sm:w-16">
                   <svg className="h-7 w-7 sm:h-8 sm:w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
@@ -138,10 +128,8 @@ export default function AboutPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="mb-3 text-lg font-medium text-gray-900 sm:mb-4 sm:text-xl dark:text-white">
-                  Global Impact
-                </h3>
-                <p className="text-sm leading-relaxed text-gray-500 sm:text-base dark:text-gray-400">
+                <h3 className="mb-3 text-lg font-medium text-gray-900 sm:mb-4 sm:text-xl">Global Impact</h3>
+                <p className="text-sm leading-relaxed text-gray-500 sm:text-base">
                   Creating a fairer, more inclusive global financial system.
                 </p>
               </div>
@@ -151,7 +139,7 @@ export default function AboutPage() {
       </section>
 
       {/* EU Focus section */}
-      <section className="border-t border-gray-100 py-16 sm:py-20 dark:border-gray-800">
+      <section className="border-t border-gray-100 py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
           <div className="mb-6 sm:mb-8">
             <svg
@@ -165,14 +153,14 @@ export default function AboutPage() {
                 clipRule="evenodd"
               />
             </svg>
-            <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl dark:text-white">European Foundation</h2>
-            <p className="mx-auto mb-6 max-w-2xl text-base text-gray-500 sm:mb-8 sm:text-lg dark:text-gray-400">
+            <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl">European Foundation</h2>
+            <p className="mx-auto mb-6 max-w-2xl text-base text-gray-500 sm:mb-8 sm:text-lg">
               Headquartered in the European Union with a focus on regulatory compliance, innovation, and cross-border
               collaboration. We're building the bridge between traditional finance and decentralized systems.
             </p>
             <Link
               href="/"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 sm:w-auto dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 sm:w-auto"
             >
               Explore Our Platform
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

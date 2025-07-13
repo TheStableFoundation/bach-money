@@ -3,15 +3,15 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-100 bg-gray-50/50 dark:border-gray-800 dark:bg-gray-900/50">
+    <footer className="border-t border-gray-100 bg-gray-50/50">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-3">
           {/* Brand section */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
-              <span className="text-2xl font-light text-gray-900 dark:text-white">Bach Money</span>
+              <span className="text-2xl font-light text-gray-900">Bach Money</span>
             </Link>
-            <p className="mt-4 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
+            <p className="mt-4 text-sm leading-relaxed text-gray-500">
               This is not financial advice. The information provided on this website is for informational purposes only.
             </p>
             <div className="mt-6">
@@ -35,43 +35,30 @@ export default function Footer() {
           {/* Navigation sections */}
           <div className="grid gap-8 sm:grid-cols-2 lg:col-span-2 lg:gap-12">
             <div>
-              <h3 className="mb-6 text-sm font-medium tracking-wider text-gray-900 uppercase dark:text-white">
-                Resources
-              </h3>
+              <h3 className="mb-6 text-sm font-medium tracking-wider text-gray-900 uppercase">Resources</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link
-                    href="/about"
-                    className="text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                  >
+                  <Link href="/about" className="text-sm text-gray-600 transition-colors hover:text-gray-900">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/timeline"
-                    className="text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                  >
+                  <Link href="/timeline" className="text-sm text-gray-600 transition-colors hover:text-gray-900">
                     Timeline
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/privacy-policy"
-                    className="text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                  >
+                  <Link href="/privacy-policy" className="text-sm text-gray-600 transition-colors hover:text-gray-900">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/whitepaper"
-                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Whitepaper
-                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700 dark:bg-orange-900/30 dark:text-orange-400">
-                      WIP
-                    </span>
+                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700">WIP</span>
                   </Link>
                 </li>
                 <li>
@@ -79,32 +66,26 @@ export default function Footer() {
                     href="https://docs.bach.money/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Documentation
-                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700 dark:bg-orange-900/30 dark:text-orange-400">
-                      WIP
-                    </span>
+                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700">WIP</span>
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="mb-6 text-sm font-medium tracking-wider text-gray-900 uppercase dark:text-white">
-                Ecosystem
-              </h3>
+              <h3 className="mb-6 text-sm font-medium tracking-wider text-gray-900 uppercase">Ecosystem</h3>
               <ul className="space-y-3">
                 <li>
                   <Link
                     href="/wallet"
                     title="Not Wallet no-custodial Solana crypto stablecoin wallet"
-                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Non-custodial Wallet
-                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
-                      Beta
-                    </span>
+                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700">Beta</span>
                   </Link>
                 </li>
                 <li>
@@ -112,7 +93,7 @@ export default function Footer() {
                     href="https://bachmoney-stats.5mb.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                    className="text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Stats
                   </Link>
@@ -122,12 +103,10 @@ export default function Footer() {
                     href="https://app.bach.money/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Launch dApp
-                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700 dark:bg-orange-900/30 dark:text-orange-400">
-                      WIP
-                    </span>
+                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700">WIP</span>
                   </Link>
                 </li>
                 <li>
@@ -135,12 +114,10 @@ export default function Footer() {
                     href="https://api.musik88.com/login"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Universe API
-                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
-                      Beta
-                    </span>
+                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700">Beta</span>
                   </Link>
                 </li>
                 <li>
@@ -148,12 +125,10 @@ export default function Footer() {
                     href="https://musik88.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Universe UI
-                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
-                      Beta
-                    </span>
+                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700">Beta</span>
                   </Link>
                 </li>
               </ul>
@@ -162,13 +137,13 @@ export default function Footer() {
         </div>
 
         {/* Bottom section */}
-        <div className="mt-12 border-t border-gray-200 pt-8 dark:border-gray-700">
+        <div className="mt-12 border-t border-gray-200 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className="text-sm text-gray-500">
               © {new Date().getFullYear()} The Stable Foundation. Powered by{" "}
               <a
                 href="https://smbcloud.xyz/"
-                className="font-medium text-gray-700 transition-colors hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+                className="font-medium text-gray-700 transition-colors hover:text-gray-900"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -178,12 +153,12 @@ export default function Footer() {
             </p>
 
             <div className="flex items-center gap-6">
-              <span className="text-sm text-gray-500 dark:text-gray-400">We love open source ❤️</span>
+              <span className="text-sm text-gray-500">We love open source ❤️</span>
 
               <div className="flex items-center gap-4">
                 <a
                   href="https://github.com/TheStableFoundation"
-                  className="text-gray-400 transition-colors hover:text-gray-600 dark:hover:text-gray-300"
+                  className="text-gray-400 transition-colors hover:text-gray-600"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
@@ -198,7 +173,7 @@ export default function Footer() {
                 </a>
                 <a
                   href="https://www.linkedin.com/company/thestablefoundation/about/"
-                  className="text-gray-400 transition-colors hover:text-gray-600 dark:hover:text-gray-300"
+                  className="text-gray-400 transition-colors hover:text-gray-600"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"

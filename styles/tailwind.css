@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
 
 @config '../tailwind.config.js';
 
@@ -13,16 +15,6 @@
     --nordic-charcoal: #18181b;
     --nordic-accent: #64748b;
     --nordic-blue: #475569;
-  }
-
-  [data-theme="dark"] {
-    --nordic-white: #09090b;
-    --nordic-light-gray: #18181b;
-    --nordic-gray: #a1a1aa;
-    --nordic-dark-gray: #d4d4d8;
-    --nordic-charcoal: #fafafa;
-    --nordic-accent: #94a3b8;
-    --nordic-blue: #cbd5e1;
   }
 
   /* Enhanced typography for Nordic minimalism */
@@ -105,16 +97,16 @@
   }
 
   .btn-nordic-primary {
-    @apply bg-gray-900 text-white hover:bg-gray-800 focus:ring-gray-500 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100;
+    @apply bg-gray-900 text-white hover:bg-gray-800 focus:ring-gray-500;
   }
 
   .btn-nordic-secondary {
-    @apply border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 focus:ring-gray-500 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800;
+    @apply border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 focus:ring-gray-500;
   }
 
   /* Nordic card patterns */
   .card-nordic {
-    @apply rounded-2xl border border-gray-100 bg-white shadow-sm transition-shadow duration-200 hover:shadow-md dark:border-gray-800 dark:bg-gray-900/50;
+    @apply rounded-2xl border border-gray-100 bg-white shadow-sm transition-shadow duration-200 hover:shadow-md;
   }
 
   /* Nordic section spacing */
@@ -164,11 +156,8 @@
   }
 
   /* Nordic gradient utilities */
+  /* Mobile-optimized gradients */
   .bg-nordic-gradient {
     background: linear-gradient(135deg, #fafafa 0%, #f4f4f5 100%);
-  }
-
-  .dark .bg-nordic-gradient {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   }
 }
