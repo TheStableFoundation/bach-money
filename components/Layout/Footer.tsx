@@ -3,145 +3,216 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-gray-900 mt-10">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="gap-6 md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
-            <a href="https://bach.money/" className="flex items-center">
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Bach Money</span>
-            </a>
-            <p className="mt-6">This is not financial advice. The information provided on this website is for informational purposes only.</p>
-            <Link
-              href="https://www.birdeye.so/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
-              className="mr-3"
-              target="_blank"
-            >
-              <Image
-                src={"/birdeye/Birdeye-Logo_Black-full-logo-400x400.png"}
-                width={100}
-                height={100}
-                alt="Birdeye Logo"
-              />
+    <footer className="border-t border-gray-100 bg-gray-50/50 dark:border-gray-800 dark:bg-gray-900/50">
+      <div className="mx-auto max-w-6xl px-6 py-16">
+        <div className="grid gap-12 lg:grid-cols-3">
+          {/* Brand section */}
+          <div className="lg:col-span-1">
+            <Link href="/" className="inline-block">
+              <span className="text-2xl font-light text-gray-900 dark:text-white">Bach Money</span>
             </Link>
+            <p className="mt-4 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
+              This is not financial advice. The information provided on this website is for informational purposes only.
+            </p>
+            <div className="mt-6">
+              <Link
+                href="https://www.birdeye.so/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block opacity-60 transition-opacity hover:opacity-100"
+              >
+                <Image
+                  src="/birdeye/Birdeye-Logo_Black-full-logo-400x400.png"
+                  width={80}
+                  height={80}
+                  alt="Birdeye Logo"
+                  className="h-auto w-20"
+                />
+              </Link>
+            </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6 lg:gap-4">
+          {/* Navigation sections */}
+          <div className="grid gap-8 sm:grid-cols-2 lg:col-span-2 lg:gap-12">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
-              <ul className="font-medium text-gray-500 dark:text-gray-400">
-                <li className="mb-2">
-                  <Link href="/about">
+              <h3 className="mb-6 text-sm font-medium tracking-wider text-gray-900 uppercase dark:text-white">
+                Resources
+              </h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link
+                    href="/about"
+                    className="text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                  >
                     About
                   </Link>
                 </li>
-                <li className="mb-2">
-                  <Link href="/timeline">
+                <li>
+                  <Link
+                    href="/timeline"
+                    className="text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                  >
                     Timeline
                   </Link>
                 </li>
-                <li className="mb-2">
-                  <Link href="/privacy-policy">
+                <li>
+                  <Link
+                    href="/privacy-policy"
+                    className="text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
-                <li className="mb-2">
-                  <Link href="/whitepaper">
-                    Whitepaper <span className="text-xs text-red-400 dark:text-red-500">WIP</span>
+                <li>
+                  <Link
+                    href="/whitepaper"
+                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Whitepaper
+                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700 dark:bg-orange-900/30 dark:text-orange-400">
+                      WIP
+                    </span>
                   </Link>
                 </li>
-                <li className="mb-2">
-                  <Link href="https://docs.bach.money/" target="_blank" rel="noopener noreferrer">
-                    Documentation <span className="text-xs text-red-400 dark:text-red-500">WIP</span>
+                <li>
+                  <Link
+                    href="https://docs.bach.money/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Documentation
+                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700 dark:bg-orange-900/30 dark:text-orange-400">
+                      WIP
+                    </span>
                   </Link>
                 </li>
               </ul>
             </div>
+
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Ecosystem</h2>
-              <ul className="font-medium text-gray-500 dark:text-gray-400">
-                <li className="mb-2">
-                  <Link href="/wallet" title="Not Wallet no-custodial Solana crypto stablecoin wallet">
-                    Non-custodial Wallet <span className="text-xs text-red-400 dark:text-red-500">Beta</span>
+              <h3 className="mb-6 text-sm font-medium tracking-wider text-gray-900 uppercase dark:text-white">
+                Ecosystem
+              </h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link
+                    href="/wallet"
+                    title="Not Wallet no-custodial Solana crypto stablecoin wallet"
+                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Non-custodial Wallet
+                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
+                      Beta
+                    </span>
                   </Link>
                 </li>
-                <li className="mb-2">
-                  <Link href="https://bachmoney-stats.5mb.app/" target="_blank" rel="noopener noreferrer">
+                <li>
+                  <Link
+                    href="https://bachmoney-stats.5mb.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                  >
                     Stats
                   </Link>
                 </li>
-                <li className="mb-2">
-                  <Link href="https://app.bach.money/" target="_blank" rel="noopener noreferrer">
-                    Launch dApp <span className="text-xs text-red-400 dark:text-red-500">WIP</span>
+                <li>
+                  <Link
+                    href="https://app.bach.money/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Launch dApp
+                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700 dark:bg-orange-900/30 dark:text-orange-400">
+                      WIP
+                    </span>
                   </Link>
                 </li>
-                <li className="mb-2">
-                  <Link href="https://api.musik88.com/login" target="_blank" rel="noopener noreferrer">
-                    Universe API <span className="text-xs text-red-400 dark:text-red-500">Beta</span>
+                <li>
+                  <Link
+                    href="https://api.musik88.com/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Universe API
+                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
+                      Beta
+                    </span>
                   </Link>
                 </li>
-                <li className="mb-2">
-                  <Link href="https://musik88.com" target="_blank" rel="noopener noreferrer">
-                    Universe UI <span className="text-xs text-red-400 dark:text-red-500">Beta</span>
+                <li>
+                  <Link
+                    href="https://musik88.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    Universe UI
+                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
+                      Beta
+                    </span>
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 dark:text-gray-400 text-left block">
-            © {new Date().getFullYear()} The Stable Foundation. Powered by{" "}
-            <a
-              href="https://smbcloud.xyz/"
-              className="text-red-600 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              smbCloud
-            </a>
-            . All Rights Reserved.
-          </span>
-          <div className="mt-4 flex items-center gap-4 sm:mt-0 sm:justify-end w-full sm:w-auto">
-            <span>We love open source ❤️</span>
-            <a
-              href="https://github.com/TheStableFoundation"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                className="h-4 w-4"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 20"
+
+        {/* Bottom section */}
+        <div className="mt-12 border-t border-gray-200 pt-8 dark:border-gray-700">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              © {new Date().getFullYear()} The Stable Foundation. Powered by{" "}
+              <a
+                href="https://smbcloud.xyz/"
+                className="font-medium text-gray-700 transition-colors hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <path
-                  fillRule="evenodd"
-                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span className="sr-only">GitHub</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/thestablefoundation/about/"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                className="h-4 w-4"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.29h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/>
-              </svg>
-              <span className="sr-only">LinkedIn</span>
-            </a>
+                smbCloud
+              </a>
+              . All Rights Reserved.
+            </p>
+
+            <div className="flex items-center gap-6">
+              <span className="text-sm text-gray-500 dark:text-gray-400">We love open source ❤️</span>
+
+              <div className="flex items-center gap-4">
+                <a
+                  href="https://github.com/TheStableFoundation"
+                  className="text-gray-400 transition-colors hover:text-gray-600 dark:hover:text-gray-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fillRule="evenodd"
+                      d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/thestablefoundation/about/"
+                  className="text-gray-400 transition-colors hover:text-gray-600 dark:hover:text-gray-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fillRule="evenodd"
+                      d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
