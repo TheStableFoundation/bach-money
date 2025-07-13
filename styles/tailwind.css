@@ -1,21 +1,174 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @config '../tailwind.config.js';
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
+/* Nordic Design System */
 @layer base {
+  /* Custom CSS Variables for Nordic palette */
+  :root {
+    --nordic-white: #fafafa;
+    --nordic-light-gray: #f4f4f5;
+    --nordic-gray: #71717a;
+    --nordic-dark-gray: #3f3f46;
+    --nordic-charcoal: #18181b;
+    --nordic-accent: #64748b;
+    --nordic-blue: #475569;
+  }
+
+  [data-theme="dark"] {
+    --nordic-white: #09090b;
+    --nordic-light-gray: #18181b;
+    --nordic-gray: #a1a1aa;
+    --nordic-dark-gray: #d4d4d8;
+    --nordic-charcoal: #fafafa;
+    --nordic-accent: #94a3b8;
+    --nordic-blue: #cbd5e1;
+  }
+
+  /* Enhanced typography for Nordic minimalism */
+  html {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    font-variant-ligatures: contextual;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family:
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+
+  /* Improved heading hierarchy */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-weight: 200;
+    letter-spacing: -0.05em;
+  }
+
+  /* Nordic-inspired selection */
+  ::selection {
+    background-color: rgba(100, 116, 139, 0.2);
+    color: inherit;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Focus styles for accessibility */
+  :focus-visible {
+    outline: 2px solid var(--nordic-accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /*
+    The default border color has changed to `currentColor` in Tailwind CSS v4,
+    so we've added these compatibility styles to make sure everything still
+    looks the same as it did with Tailwind CSS v3.
+  */
   *,
   ::after,
   ::before,
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+/* Component layer for Nordic design patterns */
+@layer components {
+  /* Nordic button patterns */
+  .btn-nordic {
+    @apply inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-medium transition-all duration-200 focus:ring-2 focus:ring-offset-2 focus:outline-none;
+  }
+
+  .btn-nordic-primary {
+    @apply bg-gray-900 text-white hover:bg-gray-800 focus:ring-gray-500 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100;
+  }
+
+  .btn-nordic-secondary {
+    @apply border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 focus:ring-gray-500 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800;
+  }
+
+  /* Nordic card patterns */
+  .card-nordic {
+    @apply rounded-2xl border border-gray-100 bg-white shadow-sm transition-shadow duration-200 hover:shadow-md dark:border-gray-800 dark:bg-gray-900/50;
+  }
+
+  /* Nordic section spacing */
+  .section-nordic {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  /* Nordic text hierarchy */
+  .text-nordic-hero {
+    @apply text-5xl font-light tracking-tight md:text-6xl lg:text-7xl;
+  }
+
+  .text-nordic-title {
+    @apply text-3xl font-light md:text-4xl;
+  }
+
+  .text-nordic-subtitle {
+    @apply text-xl font-light md:text-2xl;
+  }
+
+  .text-nordic-body {
+    @apply text-lg leading-relaxed;
+  }
+}
+
+/* Utilities layer for Nordic-specific utilities */
+@layer utilities {
+  /* Nordic spacing utilities */
+  .space-nordic {
+    @apply space-y-8 md:space-y-12 lg:space-y-16;
+  }
+
+  /* Nordic animation utilities */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Nordic gradient utilities */
+  .bg-nordic-gradient {
+    background: linear-gradient(135deg, #fafafa 0%, #f4f4f5 100%);
+  }
+
+  .dark .bg-nordic-gradient {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   }
 }

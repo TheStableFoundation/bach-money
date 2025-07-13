@@ -1,8 +1,7 @@
 import { Metadata } from "next"
-
 import Link from "next/link"
-import Footer from "components/Layout/Footer"
-import { LP_GRID_ITEMS } from "lp-items"
+import Footer from "../components/Layout/Footer"
+import { LP_GRID_ITEMS } from "../lp-items"
 
 export const metadata: Metadata = {
   title: "BACH Money - A decentralized stablecoin platform",
@@ -26,73 +25,155 @@ export const metadata: Metadata = {
 export default function Web() {
   return (
     <>
-      <section className="bg-yellow-100 border-b-2 border-yellow-300 dark:bg-yellow-900">
-        <div className="mx-auto flex max-w-screen-xl items-center justify-center px-4 py-4 text-center">
-          <Link
-            href="/airdrop"
-            className="inline-block rounded-lg bg-yellow-300 px-5 py-2 font-semibold text-yellow-900 shadow hover:bg-yellow-400 transition"
-          >
-            🎉 BACH Token Airdrop: Claim up to 10.99 BACH to your NotWallet! &rarr;
-          </Link>
-        </div>
-      </section>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto grid max-w-(--breakpoint-xl) px-4 py-8 text-center lg:py-16">
-          <div className="mx-auto place-self-center flex flex-col items-center justify-center">
-            <h1 className="mb-4 max-w-2xl text-4xl leading-none font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white text-center">
-              BACH Money
-            </h1>
-            <h2 className="mb-4 text-2xl text-center">A decentralized stablecoin platform.</h2>
-            <p className="text-center">
-              Governed by{" "}
-              <a
-                href="https://solscan.io/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-blue-700 font-semibold"
-              >
-                €BACH token
-              </a>
-              , a{" "}
-              <span className="font-bold text-red-600 italic underline">
-                fixed-supply deflationary
-              </span>{" "}
-              governance token of The Stable Foundation (the DAO).
-            </p>
+      {/* Minimal announcement banner */}
+      <section className="border-b border-gray-100 dark:border-gray-800">
+        <div className="mx-auto max-w-6xl px-6 py-3">
+          <div className="text-center">
+            <Link
+              href="/airdrop"
+              className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            >
+              <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-green-400"></span>
+              BACH Token Airdrop: Claim up to 10.99 BACH
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-          <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
-            {LP_GRID_ITEMS.map((singleItem) => (
-              <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
-                <div className="bg-primary-100 dark:bg-primary-900 mb-4 flex size-10 items-center justify-center rounded-full p-1.5 text-blue-700 lg:size-12">
-                  {singleItem.icon}
+
+      {/* Hero section */}
+      <section className="py-24 md:py-32 lg:py-40">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="mb-8">
+              <span className="inline-block rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-600 dark:border-gray-800 dark:bg-gray-900/50 dark:text-gray-400">
+                Open Source • Decentralized • EU-Built
+              </span>
+            </div>
+
+            <h1 className="mb-8 text-5xl font-light tracking-tight text-gray-900 md:text-6xl lg:text-7xl dark:text-white">
+              BACH
+              <span className="mt-2 block text-4xl font-extralight text-gray-500 md:text-5xl lg:text-6xl dark:text-gray-400">
+                Money
+              </span>
+            </h1>
+
+            <p className="mx-auto mb-8 max-w-2xl text-xl leading-relaxed font-light text-gray-600 md:text-2xl dark:text-gray-300">
+              A decentralized stablecoin platform built for transparency and community governance.
+            </p>
+
+            <div className="mb-12">
+              <p className="mb-6 text-gray-500 dark:text-gray-400">
+                Governed by{" "}
+                <a
+                  href="https://solscan.io/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-b border-dotted border-gray-300 font-medium text-gray-700 transition-colors hover:text-gray-900 dark:border-gray-600 dark:text-gray-300 dark:hover:text-white"
+                >
+                  €BACH token
+                </a>
+                , a fixed-supply deflationary governance token of The Stable Foundation DAO.
+              </p>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <Link
+                href="/timeline"
+                className="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100"
+              >
+                View Timeline
+                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </Link>
+              <Link
+                href="/tokenomics"
+                className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+              >
+                Tokenomics
+                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features grid */}
+      <section className="border-t border-gray-100 py-20 dark:border-gray-800">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 text-3xl font-light text-gray-900 md:text-4xl dark:text-white">Built for the future</h2>
+            <p className="mx-auto max-w-2xl text-lg text-gray-500 dark:text-gray-400">
+              Combining Nordic design principles with blockchain technology for a transparent, community-driven
+              platform.
+            </p>
+          </div>
+
+          <div className="grid gap-12 md:grid-cols-3 lg:gap-16">
+            {LP_GRID_ITEMS.map((item) => (
+              <div key={item.title} className="group text-center">
+                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gray-50 text-gray-400 transition-colors group-hover:bg-gray-100 dark:bg-gray-900/50 dark:group-hover:bg-gray-800/50">
+                  <div className="h-8 w-8">{item.icon}</div>
                 </div>
-                <h3 className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
-                <p className="text-gray-500 dark:text-gray-400">{singleItem.description}</p>
+                <h3 className="mb-4 text-xl font-medium text-gray-900 dark:text-white">{item.title}</h3>
+                <p className="leading-relaxed text-gray-500 dark:text-gray-400">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <section className="bg-white dark:bg-gray-900 mb-16">
-        <div className="mx-auto mt-6 flex max-w-(--breakpoint-xl) flex-col items-center justify-center px-4 text-center lg:px-6">
-          <Link
-            href="/timeline"
-            className="inline-block rounded-lg bg-blue-100 px-5 py-2 font-semibold text-blue-900 shadow hover:bg-blue-200 transition"
-          >
-            📅 View the BACH Money Timeline
-          </Link>
-          <Link
-            href="/tokenomics"
-            className="inline-block rounded-lg bg-green-100 px-5 py-2 font-semibold text-green-900 shadow hover:bg-green-200 transition mt-4"
-          >
-            📊 View Tokenomics
-          </Link>
+
+      {/* Open source section */}
+      <section className="border-t border-gray-100 py-20 dark:border-gray-800">
+        <div className="mx-auto max-w-4xl px-6 text-center">
+          <div className="mb-8">
+            <svg className="mx-auto mb-6 h-12 w-12 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fillRule="evenodd"
+                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                clipRule="evenodd"
+              />
+            </svg>
+            <h2 className="mb-4 text-3xl font-light text-gray-900 dark:text-white">Open Source by Design</h2>
+            <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-500 dark:text-gray-400">
+              Transparency and community collaboration are at the heart of everything we build. Explore our codebase and
+              contribute to the future of decentralized finance.
+            </p>
+            <a
+              href="https://github.com/TheStableFoundation"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+            >
+              <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              View on GitHub
+            </a>
+          </div>
         </div>
       </section>
+
       <Footer />
     </>
   )
