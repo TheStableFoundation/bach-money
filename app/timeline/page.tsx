@@ -1,6 +1,6 @@
 import Link from "next/link"
-import TimelineView from "../../components/Timeline"
 import Footer from "../../components/Layout/Footer"
+import TimelineView from "../../components/Timeline"
 
 export default function TimelinePage() {
   return (
