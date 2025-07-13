@@ -1,53 +1,112 @@
-"use client";
-import React from "react";
-import TimelineView from "components/Timeline";
-import { useRouter } from "next/navigation";
+import Link from "next/link"
+import TimelineView from "../../components/Timeline"
+import Footer from "../../components/Layout/Footer"
 
 export default function TimelinePage() {
-  const router = useRouter();
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        background: "linear-gradient(135deg, #e5e9f0 0%, #d8dee9 100%)",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
-        color: "#2e3440",
-        padding: "2rem",
-      }}
-    >
-      <button
-        onClick={() => router.push("/")}
-        style={{
-          position: "absolute",
-          left: 32,
-          top: 32,
-          background: "#eceff4",
-          color: "#4c566a",
-          border: "none",
-          borderRadius: "0.5rem",
-          padding: "0.5rem 1rem",
-          fontWeight: 500,
-          cursor: "pointer",
-          boxShadow: "0 2px 8px 0 #4c566a11",
-          transition: "background 0.2s",
-          zIndex: 10,
-        }}
-      >
-        ← Back
-      </button>
-      <div style={{ marginTop: "3rem", marginBottom: "2rem", padding: "1rem" }}>
-        <h1 style={{ fontSize: "2rem", fontWeight: 800, marginBottom: "2rem", textAlign: "center" }}>
-          BACH Money Timeline
-        </h1>
-        <TimelineView />
-      </div>
-      <footer style={{ marginTop: "2.5rem", color: "#4c566a", fontSize: "0.95rem", padding: "0 1rem", textAlign: "center" }}>
-        Powered by The Stable Foundation &mdash; Solana Blockchain
-      </footer>
-    </main>
-  );
+    <>
+      {/* Header with back navigation */}
+      <section className="border-b border-gray-100 dark:border-gray-800">
+        <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-50 hover:text-gray-900 sm:px-0 sm:py-0 sm:hover:bg-transparent dark:text-gray-400 dark:hover:bg-gray-800/50 dark:hover:text-white"
+          >
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Home
+          </Link>
+        </div>
+      </section>
+
+      {/* Hero section */}
+      <section className="py-16 sm:py-24 md:py-32">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="mb-6 sm:mb-8">
+              <span className="inline-block rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-600 sm:text-sm dark:border-gray-800 dark:bg-gray-900/50 dark:text-gray-400">
+                Our Journey
+              </span>
+            </div>
+
+            <h1 className="mb-6 text-4xl font-light tracking-tight text-gray-900 sm:mb-8 sm:text-5xl md:text-6xl dark:text-white">
+              BACH Money
+              <span className="mt-1 block text-3xl font-extralight text-gray-500 sm:mt-2 sm:text-4xl md:text-5xl dark:text-gray-400">
+                Timeline
+              </span>
+            </h1>
+
+            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed font-light text-gray-600 sm:text-xl md:text-2xl dark:text-gray-300">
+              From the Big Bang to the future of decentralized finance. Explore our journey through time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline section */}
+      <section className="border-t border-gray-100 py-16 sm:py-20 dark:border-gray-800">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="flex justify-center">
+            <div className="w-full max-w-2xl">
+              <div className="mb-8 text-center">
+                <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl dark:text-white">Key Milestones</h2>
+                <p className="text-base text-gray-500 sm:text-lg dark:text-gray-400">
+                  A cosmic perspective on our journey from the universe's beginning to decentralized finance.
+                </p>
+              </div>
+
+              <div className="flex justify-center">
+                <TimelineView />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA section */}
+      <section className="border-t border-gray-100 py-16 sm:py-20 dark:border-gray-800">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
+          <div className="mb-6 sm:mb-8">
+            <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl dark:text-white">Join Our Journey</h2>
+            <p className="mx-auto mb-6 max-w-2xl text-base text-gray-500 sm:mb-8 sm:text-lg dark:text-gray-400">
+              Be part of the next chapter in decentralized finance. Explore our platform and see what we're building.
+            </p>
+            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+              <Link
+                href="/tokenomics"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800 sm:w-auto dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100"
+              >
+                View Tokenomics
+                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  />
+                </svg>
+              </Link>
+              <Link
+                href="/about"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 sm:w-auto dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+              >
+                Learn More
+                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  )
 }
