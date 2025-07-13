@@ -26,12 +26,12 @@ export default function Web() {
   return (
     <>
       {/* Minimal announcement banner */}
-      <section className="border-b border-gray-100 dark:border-gray-800">
+      <section className="border-b border-gray-100">
         <div className="mx-auto max-w-6xl px-6 py-3">
           <div className="text-center">
             <Link
               href="/airdrop"
-              className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
             >
               <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-green-400"></span>
               BACH Token Airdrop: Claim up to 10.99 BACH
@@ -48,30 +48,28 @@ export default function Web() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-8">
-              <span className="inline-block rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-600 dark:border-gray-800 dark:bg-gray-900/50 dark:text-gray-400">
+              <span className="inline-block rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-600">
                 Open Source • Decentralized • EU-Built
               </span>
             </div>
 
-            <h1 className="mb-8 text-5xl font-light tracking-tight text-gray-900 md:text-6xl lg:text-7xl dark:text-white">
+            <h1 className="mb-8 text-5xl font-light tracking-tight text-gray-900 md:text-6xl lg:text-7xl">
               BACH
-              <span className="mt-2 block text-4xl font-extralight text-gray-500 md:text-5xl lg:text-6xl dark:text-gray-400">
-                Money
-              </span>
+              <span className="mt-2 block text-4xl font-extralight text-gray-500 md:text-5xl lg:text-6xl">Money</span>
             </h1>
 
-            <p className="mx-auto mb-8 max-w-2xl text-xl leading-relaxed font-light text-gray-600 md:text-2xl dark:text-gray-300">
+            <p className="mx-auto mb-8 max-w-2xl text-xl leading-relaxed font-light text-gray-600 md:text-2xl">
               A decentralized stablecoin platform built for transparency and community governance.
             </p>
 
             <div className="mb-12">
-              <p className="mb-6 text-gray-500 dark:text-gray-400">
+              <p className="mb-6 text-gray-500">
                 Governed by{" "}
                 <a
                   href="https://solscan.io/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border-b border-dotted border-gray-300 font-medium text-gray-700 transition-colors hover:text-gray-900 dark:border-gray-600 dark:text-gray-300 dark:hover:text-white"
+                  className="border-b border-dotted border-gray-300 font-medium text-gray-700 transition-colors hover:text-gray-900"
                 >
                   €BACH token
                 </a>
@@ -83,7 +81,7 @@ export default function Web() {
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href="/timeline"
-                className="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100"
+                className="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800"
               >
                 View Timeline
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,7 +95,7 @@ export default function Web() {
               </Link>
               <Link
                 href="/tokenomics"
-                className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+                className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
               >
                 Tokenomics
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,11 +113,11 @@ export default function Web() {
       </section>
 
       {/* Features grid */}
-      <section className="border-t border-gray-100 py-20 dark:border-gray-800">
+      <section className="border-t border-gray-100 py-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-light text-gray-900 md:text-4xl dark:text-white">Built for the future</h2>
-            <p className="mx-auto max-w-2xl text-lg text-gray-500 dark:text-gray-400">
+            <h2 className="mb-4 text-3xl font-light text-gray-900 md:text-4xl">Built for the future</h2>
+            <p className="mx-auto max-w-2xl text-lg text-gray-500">
               Combining Nordic design principles with blockchain technology for a transparent, community-driven
               platform.
             </p>
@@ -128,11 +126,11 @@ export default function Web() {
           <div className="grid gap-12 md:grid-cols-3 lg:gap-16">
             {LP_GRID_ITEMS.map((item) => (
               <div key={item.title} className="group text-center">
-                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gray-50 text-gray-400 transition-colors group-hover:bg-gray-100 dark:bg-gray-900/50 dark:group-hover:bg-gray-800/50">
+                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gray-50 text-gray-400 transition-colors group-hover:bg-gray-100">
                   <div className="h-8 w-8">{item.icon}</div>
                 </div>
-                <h3 className="mb-4 text-xl font-medium text-gray-900 dark:text-white">{item.title}</h3>
-                <p className="leading-relaxed text-gray-500 dark:text-gray-400">{item.description}</p>
+                <h3 className="mb-4 text-xl font-medium text-gray-900">{item.title}</h3>
+                <p className="leading-relaxed text-gray-500">{item.description}</p>
               </div>
             ))}
           </div>
@@ -140,7 +138,7 @@ export default function Web() {
       </section>
 
       {/* Open source section */}
-      <section className="border-t border-gray-100 py-20 dark:border-gray-800">
+      <section className="border-t border-gray-100 py-20">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <div className="mb-8">
             <svg className="mx-auto mb-6 h-12 w-12 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
@@ -150,8 +148,8 @@ export default function Web() {
                 clipRule="evenodd"
               />
             </svg>
-            <h2 className="mb-4 text-3xl font-light text-gray-900 dark:text-white">Open Source by Design</h2>
-            <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-500 dark:text-gray-400">
+            <h2 className="mb-4 text-3xl font-light text-gray-900">Open Source by Design</h2>
+            <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-500">
               Transparency and community collaboration are at the heart of everything we build. Explore our codebase and
               contribute to the future of decentralized finance.
             </p>
@@ -159,7 +157,7 @@ export default function Web() {
               href="https://github.com/TheStableFoundation"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+              className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
             >
               <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
                 <path

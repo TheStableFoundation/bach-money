@@ -6,11 +6,11 @@ export default function TimelinePage() {
   return (
     <>
       {/* Header with back navigation */}
-      <section className="border-b border-gray-100 dark:border-gray-800">
+      <section className="border-b border-gray-100">
         <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-50 hover:text-gray-900 sm:px-0 sm:py-0 sm:hover:bg-transparent dark:text-gray-400 dark:hover:bg-gray-800/50 dark:hover:text-white"
+            className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-50 hover:text-gray-900 sm:px-0 sm:py-0 sm:hover:bg-transparent"
           >
             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
@@ -25,19 +25,19 @@ export default function TimelinePage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 sm:mb-8">
-              <span className="inline-block rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-600 sm:text-sm dark:border-gray-800 dark:bg-gray-900/50 dark:text-gray-400">
+              <span className="inline-block rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-600 sm:text-sm">
                 Our Journey
               </span>
             </div>
 
-            <h1 className="mb-6 text-4xl font-light tracking-tight text-gray-900 sm:mb-8 sm:text-5xl md:text-6xl dark:text-white">
+            <h1 className="mb-6 text-4xl font-light tracking-tight text-gray-900 sm:mb-8 sm:text-5xl md:text-6xl">
               BACH Money
-              <span className="mt-1 block text-3xl font-extralight text-gray-500 sm:mt-2 sm:text-4xl md:text-5xl dark:text-gray-400">
+              <span className="mt-1 block text-3xl font-extralight text-gray-500 sm:mt-2 sm:text-4xl md:text-5xl">
                 Timeline
               </span>
             </h1>
 
-            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed font-light text-gray-600 sm:text-xl md:text-2xl dark:text-gray-300">
+            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed font-light text-gray-600 sm:text-xl md:text-2xl">
               From the Big Bang to the future of decentralized finance. Explore our journey through time.
             </p>
           </div>
@@ -45,13 +45,13 @@ export default function TimelinePage() {
       </section>
 
       {/* Timeline section */}
-      <section className="border-t border-gray-100 py-16 sm:py-20 dark:border-gray-800">
+      <section className="border-t border-gray-100 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex justify-center">
             <div className="w-full max-w-2xl">
               <div className="mb-8 text-center">
-                <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl dark:text-white">Key Milestones</h2>
-                <p className="text-base text-gray-500 sm:text-lg dark:text-gray-400">
+                <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl">Key Milestones</h2>
+                <p className="text-base text-gray-500 sm:text-lg">
                   A cosmic perspective on our journey from the universe's beginning to decentralized finance.
                 </p>
               </div>
@@ -65,17 +65,17 @@ export default function TimelinePage() {
       </section>
 
       {/* CTA section */}
-      <section className="border-t border-gray-100 py-16 sm:py-20 dark:border-gray-800">
+      <section className="border-t border-gray-100 py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
           <div className="mb-6 sm:mb-8">
-            <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl dark:text-white">Join Our Journey</h2>
-            <p className="mx-auto mb-6 max-w-2xl text-base text-gray-500 sm:mb-8 sm:text-lg dark:text-gray-400">
+            <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl">Join Our Journey</h2>
+            <p className="mx-auto mb-6 max-w-2xl text-base text-gray-500 sm:mb-8 sm:text-lg">
               Be part of the next chapter in decentralized finance. Explore our platform and see what we're building.
             </p>
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
               <Link
                 href="/tokenomics"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800 sm:w-auto dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800 sm:w-auto"
               >
                 View Tokenomics
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,7 +89,7 @@ export default function TimelinePage() {
               </Link>
               <Link
                 href="/about"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 sm:w-auto dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 sm:w-auto"
               >
                 Learn More
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
