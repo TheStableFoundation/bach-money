@@ -54,8 +54,8 @@ export default function Web() {
             </div>
 
             <h1 className="mb-8 text-5xl font-light tracking-tight text-gray-900 md:text-6xl lg:text-7xl">
-              BACH
-              <span className="mt-2 block text-4xl font-extralight text-gray-500 md:text-5xl lg:text-6xl">Money</span>
+              BACH&nbsp;
+              <span className="mt-2 text-4xl font-extralight text-gray-500 md:text-5xl lg:text-6xl">Money</span>
             </h1>
 
             <p className="mx-auto mb-8 max-w-2xl text-xl leading-relaxed font-light text-gray-600 md:text-2xl">
