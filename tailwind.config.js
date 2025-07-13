@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const defaultTheme = require("tailwindcss/defaultTheme")
-const flowbite = require("flowbite-react/tailwind")
 const withMT = require("@material-tailwind/react/utils/withMT")
 
 /** @type {import('tailwindcss').Config} */
@@ -12,7 +11,6 @@ module.exports = withMT({
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
-    flowbite.content(),
   ],
   theme: {
     extend: {
@@ -135,7 +133,7 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [flowbite.plugin()],
+  plugins: [],
   future: {
     hoverOnlyWhenSupported: true,
   },
