@@ -1,6 +1,34 @@
+import { Metadata } from "next"
 import Link from "next/link"
 import Footer from "../../components/Layout/Footer"
 import TimelineView from "../../components/Timeline"
+
+export const metadata: Metadata = {
+  title: "BACH Money Timeline | The Stable Foundation",
+  description:
+    "Explore the journey of BACH Money and The Stable Foundation from inception to the future of decentralized finance. Discover key milestones and our vision for stablecoins on Solana.",
+  openGraph: {
+    title: "BACH Money Timeline | The Stable Foundation",
+    description:
+      "Explore the journey of BACH Money and The Stable Foundation from inception to the future of decentralized finance. Discover key milestones and our vision for stablecoins on Solana.",
+    url: "https://bach.money/timeline",
+    type: "website",
+    images: [
+      {
+        width: 1200,
+        height: 630,
+        url: "https://station.jup.ag/assets/images/full-routing-banner-98ca8b117cc86aa7d4fadf45b56d5a7c.png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BACH Money Timeline | The Stable Foundation",
+    description:
+      "Explore the journey of BACH Money and The Stable Foundation from inception to the future of decentralized finance. Discover key milestones and our vision for stablecoins on Solana.",
+    images: ["https://station.jup.ag/assets/images/full-routing-banner-98ca8b117cc86aa7d4fadf45b56d5a7c.png"],
+  },
+}
 
 export default function TimelinePage() {
   return (

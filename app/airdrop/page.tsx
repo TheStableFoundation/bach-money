@@ -6,29 +6,6 @@ export const metadata: Metadata = {
   title: "BACH Token Airdrop | Not Wallet Non-custodial Stablecoin Crypto Wallet",
   description:
     "Claim up to 10.99 BACH tokens airdropped to your Not Wallet non-custodial stablecoin crypto wallet address. Register up to 5 Solana public keys and verify ownership via Not Wallet.",
-  keywords:
-    "BACH token, airdrop, Not Wallet, Solana, stablecoin, crypto wallet, non-custodial, claim, verification, public key, The Stable Foundation",
-  openGraph: {
-    title: "BACH Token Airdrop | Not Wallet Non-custodial Stablecoin Crypto Wallet",
-    description:
-      "Claim up to 10.99 BACH tokens airdropped to your Not Wallet non-custodial stablecoin crypto wallet address. Register up to 5 Solana public keys and verify ownership via Not Wallet.",
-    url: "https://bach.money/airdrop",
-    type: "website",
-    images: [
-      {
-        width: 1200,
-        height: 630,
-        url: "https://station.jup.ag/assets/images/full-routing-banner-98ca8b117cc86aa7d4fadf45b56d5a7c.png",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "BACH Token Airdrop | Not Wallet Non-custodial Stablecoin Crypto Wallet",
-    description:
-      "Claim up to 10.99 BACH tokens airdropped to your Not Wallet non-custodial stablecoin crypto wallet address. Register up to 5 Solana public keys and verify ownership via Not Wallet.",
-    images: ["https://station.jup.ag/assets/images/full-routing-banner-98ca8b117cc86aa7d4fadf45b56d5a7c.png"],
-  },
 }
 
 export default function AirdropPage() {

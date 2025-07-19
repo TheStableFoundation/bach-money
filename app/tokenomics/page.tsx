@@ -1,5 +1,33 @@
+import { Metadata } from "next"
 import Link from "next/link"
 import Footer from "../../components/Layout/Footer"
+
+export const metadata: Metadata = {
+  title: "€BACH Tokenomics | BACH Money",
+  description:
+    "Explore the tokenomics of €BACH, the governance and utility token of The Stable Foundation DAO. Learn about distribution, features, and community ownership.",
+  openGraph: {
+    title: "€BACH Tokenomics | BACH Money",
+    description:
+      "Explore the tokenomics of €BACH, the governance and utility token of The Stable Foundation DAO. Learn about distribution, features, and community ownership.",
+    url: "https://bach.money/tokenomics",
+    type: "website",
+    images: [
+      {
+        width: 1200,
+        height: 630,
+        url: "https://station.jup.ag/assets/images/full-routing-banner-98ca8b117cc86aa7d4fadf45b56d5a7c.png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "€BACH Tokenomics | BACH Money",
+    description:
+      "Explore the tokenomics of €BACH, the governance and utility token of The Stable Foundation DAO. Learn about distribution, features, and community ownership.",
+    images: ["https://station.jup.ag/assets/images/full-routing-banner-98ca8b117cc86aa7d4fadf45b56d5a7c.png"],
+  },
+}
 
 export default function TokenomicsPage() {
   return (
