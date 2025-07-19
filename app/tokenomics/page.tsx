@@ -145,6 +145,16 @@ export default function TokenomicsPage() {
                   </text>
                 </svg>
               </div>
+              <div className="mb-8 flex justify-center">
+                <a
+                  href="https://explorer.solana.com/address/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-b border-dotted border-[var(--purple-accent)] font-medium text-[var(--purple-bg-gradient-from)] transition-colors hover:text-[var(--purple-accent)]"
+                >
+                  View €BACH on Solana Explorer
+                </a>
+              </div>
 
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 <div className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800/50">
