@@ -74,6 +74,15 @@ export default function Web() {
                   €BACH token
                 </a>
                 , a fixed-supply deflationary governance token of The Stable Foundation DAO.
+                <br />
+                <a
+                  href="https://explorer.solana.com/address/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block border-b border-dotted border-[var(--purple-accent)] font-medium text-[var(--purple-bg-gradient-from)] transition-colors hover:text-[var(--purple-accent)]"
+                >
+                  View on Solana Explorer
+                </a>
               </p>
             </div>
 
