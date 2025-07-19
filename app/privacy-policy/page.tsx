@@ -1,5 +1,34 @@
+import { Metadata } from "next"
 import Link from "next/link"
 import Footer from "../../components/Layout/Footer"
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Not Wallet by The Stable Foundation",
+  description:
+    "Read the privacy policy for Not Wallet, a non-custodial stablecoin crypto wallet built on Solana. Learn how your data is protected and our commitment to privacy.",
+  openGraph: {
+    title: "Privacy Policy | Not Wallet by The Stable Foundation",
+    description:
+      "Read the privacy policy for Not Wallet, a non-custodial stablecoin crypto wallet built on Solana. Learn how your data is protected and our commitment to privacy.",
+    url: "https://bach.money/privacy-policy",
+    type: "website",
+    images: [
+      {
+        url: "https://bach.money/app-icon-v2.svg",
+        width: 1024,
+        height: 1024,
+        alt: "BACH Money Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Not Wallet by The Stable Foundation",
+    description:
+      "Read the privacy policy for Not Wallet, a non-custodial stablecoin crypto wallet built on Solana. Learn how your data is protected and our commitment to privacy.",
+    images: ["https://bach.money/app-icon-v2.svg"],
+  },
+}
 
 export default function PrivacyPolicyPage() {
   return (

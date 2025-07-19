@@ -1,5 +1,34 @@
+import { Metadata } from "next"
 import Link from "next/link"
 import Footer from "../../components/Layout/Footer"
+
+export const metadata: Metadata = {
+  title: "About The Stable Foundation | BACH Money",
+  description:
+    "Learn about The Stable Foundation, a decentralized autonomous organization building next-generation stablecoin infrastructure on Solana. Discover our mission, values, and European roots.",
+  openGraph: {
+    title: "About The Stable Foundation | BACH Money",
+    description:
+      "Learn about The Stable Foundation, a decentralized autonomous organization building next-generation stablecoin infrastructure on Solana. Discover our mission, values, and European roots.",
+    url: "https://bach.money/about",
+    type: "website",
+    images: [
+      {
+        url: "/public/app-icon-v2.svg",
+        width: 1024,
+        height: 1024,
+        alt: "BACH Money Purple Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About The Stable Foundation | BACH Money",
+    description:
+      "Learn about The Stable Foundation, a decentralized autonomous organization building next-generation stablecoin infrastructure on Solana. Discover our mission, values, and European roots.",
+    images: ["/public/app-icon-v2.svg"],
+  },
+}
 
 export default function AboutPage() {
   return (

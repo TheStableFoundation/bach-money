@@ -1,5 +1,34 @@
+import { Metadata } from "next"
 import Link from "next/link"
 import Footer from "../../components/Layout/Footer"
+
+export const metadata: Metadata = {
+  title: "BACH Money Whitepaper | Decentralized Stablecoin Platform",
+  description:
+    "Read the BACH Money whitepaper for a comprehensive overview of our decentralized stablecoin platform on Solana. Learn about our mission, foundation, and key features.",
+  openGraph: {
+    title: "BACH Money Whitepaper | Decentralized Stablecoin Platform",
+    description:
+      "Read the BACH Money whitepaper for a comprehensive overview of our decentralized stablecoin platform on Solana. Learn about our mission, foundation, and key features.",
+    url: "https://bach.money/whitepaper",
+    type: "article",
+    images: [
+      {
+        url: "/app-icon-v2.svg",
+        width: 1024,
+        height: 1024,
+        alt: "BACH Money Purple Coin Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BACH Money Whitepaper | Decentralized Stablecoin Platform",
+    description:
+      "Read the BACH Money whitepaper for a comprehensive overview of our decentralized stablecoin platform on Solana. Learn about our mission, foundation, and key features.",
+    images: ["/app-icon-v2.svg"],
+  },
+}
 
 const WHITEPAPER_URL =
   "https://docs.google.com/document/d/1bJ1IuGPzM0ls3Bp8V5MGwnj5te1Y3nQBcfgyxke8Yks/edit?usp=sharing"
