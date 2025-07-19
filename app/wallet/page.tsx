@@ -1,5 +1,12 @@
+import { Metadata } from "next"
 import Link from "next/link"
 import Footer from "../../components/Layout/Footer"
+
+export const metadata: Metadata = {
+  title: "Not Wallet for Solana | Non-custodial Stablecoin Crypto Wallet",
+  description:
+    "Download Not Wallet for Solana – a minimal, non-custodial stablecoin wallet. Available on iOS TestFlight and Google Play. Your keys, your coins.",
+}
 
 export default function WalletPage() {
   return (
@@ -127,9 +134,10 @@ export default function WalletPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800 sm:w-auto dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100"
+                className="btn-nordic btn-nordic-primary w-full sm:w-auto"
               >
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.564 7.792c-1.012-1.205-2.44-1.36-2.495-1.364-1.06-.107-2.07.62-2.62.62-.555 0-1.44-.604-2.37-.588-1.215.02-2.34.707-2.97 1.797-1.27 2.2-.324 5.45.91 7.23.603.89 1.32 1.89 2.26 1.85.91-.037 1.25-.59 2.34-.59 1.09 0 1.39.59 2.36.57.97-.02 1.58-.9 2.18-1.79.38-.56.52-.85.81-1.49-2.13-.82-2.05-3.01.41-3.34-.07-.29-.14-.58-.25-.85zm-2.18-2.37c.48-.58.81-1.39.72-2.19-.7.03-1.54.46-2.04 1.04-.45.52-.85 1.36-.7 2.16.75.06 1.52-.38 2.02-1.01z" />
                 </svg>
                 Try Public Beta (iOS)
               </a>
@@ -137,7 +145,7 @@ export default function WalletPage() {
                 href="https://github.com/TheStableFoundation/not"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 sm:w-auto dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+                className="btn-nordic btn-nordic-secondary w-full sm:w-auto"
               >
                 <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
                   <path
@@ -147,6 +155,17 @@ export default function WalletPage() {
                   />
                 </svg>
                 View on GitHub
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=xyz.notwallet.NotWallet"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-nordic btn-nordic-secondary mt-3 w-full sm:w-auto"
+              >
+                <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M3.09 2.32c.2-.13.44-.15.65-.05l15.5 7.36-3.6 2.13L3.09 2.32zm-.09 1.5v16.36c0 .36.29.65.65.65.11 0 .22-.03.32-.09l12.55-7.49-13.52-7.43zm17.13 8.13l-3.81 2.26 3.81 2.26c.31.18.7.07.88-.24.05-.09.08-.2.08-.31V12.2c0-.36-.29-.65-.65-.65-.11 0-.22.03-.31.09zm-4.41 2.62l-12.55 7.49c-.21.13-.48.08-.62-.13-.06-.1-.09-.21-.09-.32V21.7c0-.36.29-.65.65-.65.11 0 .22.03.32.09l12.55-7.49z" />
+                </svg>
+                Get it on Google Play
               </a>
             </div>
           </div>
