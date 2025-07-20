@@ -12,7 +12,8 @@ export default function Footer() {
               <span className="text-2xl font-light text-gray-900">Bach Money</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-gray-500">
-              This is not financial advice. The information provided on this website is for informational purposes only.
+              All content presented here is for informational purposes only and does not constitute investment,
+              financial, or other advice. Please consult a qualified advisor before making any financial decisions.
             </p>
             <div className="mt-6">
               <Link
@@ -58,7 +59,7 @@ export default function Footer() {
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Whitepaper
-                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700">WIP</span>
+                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">WIP</span>
                   </Link>
                 </li>
                 <li>
@@ -69,7 +70,7 @@ export default function Footer() {
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Documentation
-                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700">WIP</span>
+                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">WIP</span>
                   </Link>
                 </li>
               </ul>
@@ -81,11 +82,23 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/wallet"
-                    title="Not Wallet no-custodial Solana crypto stablecoin wallet"
+                    title="NotWallet non-custodial Solana crypto stablecoin wallet"
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
-                    Non-custodial Wallet
-                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700">Beta</span>
+                    NotWallet non-custodial wallet
+                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">
+                      Beta
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://notdax.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-purple-600 transition-colors hover:text-purple-800"
+                  >
+                    NotDAX Digital Assets Exchange
                   </Link>
                 </li>
                 <li>
@@ -106,7 +119,7 @@ export default function Footer() {
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Launch dApp
-                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700">WIP</span>
+                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">WIP</span>
                   </Link>
                 </li>
                 <li>
@@ -117,18 +130,9 @@ export default function Footer() {
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Universe API
-                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700">Beta</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://musik88.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
-                  >
-                    Universe UI
-                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700">Beta</span>
+                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">
+                      Beta
+                    </span>
                   </Link>
                 </li>
               </ul>
@@ -153,7 +157,9 @@ export default function Footer() {
             </p>
 
             <div className="flex items-center gap-6">
-              <span className="text-sm text-gray-500">We love open source ❤️</span>
+              <span className="text-sm text-gray-500">
+                We love open source <span style={{ color: "#9932CC" }}>💜</span>
+              </span>
 
               <div className="flex items-center gap-4">
                 <a

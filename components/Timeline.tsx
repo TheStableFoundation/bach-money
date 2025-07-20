@@ -33,7 +33,7 @@ export default function TimelineView() {
                 The Big Bang
               </Typography>
               <Typography variant="small" color="gray" className="font-normal">
-                13.79 billion years years ago
+                13.79 billion years ago
               </Typography>
             </div>
           </TimelineHeader>
@@ -50,7 +50,7 @@ export default function TimelineView() {
                 Earth
               </Typography>
               <Typography variant="small" color="gray" className="font-normal">
-                4.5 billion years old ago
+                4.5 billion years ago
               </Typography>
             </div>
           </TimelineHeader>
@@ -115,7 +115,7 @@ export default function TimelineView() {
                 <Typography variant="h6" color="blue-gray">
                   €BACH Community bootstrapping
                 </Typography>
-                <span className="inline-block rounded-full bg-yellow-300 px-3 py-1 text-xs font-semibold text-yellow-900 shadow">
+                <span className="rounded-full bg-purple-200 px-3 py-1 text-xs font-semibold text-purple-700 shadow">
                   We are here
                 </span>
               </div>
@@ -136,7 +136,7 @@ export default function TimelineView() {
                 1st midsummer burn
               </Typography>
               <Typography variant="small" color="gray" className="font-normal">
-                21 juni 2025. Target total supply 12,000,000
+                21 June 2025. Target total supply: 12,000,000
               </Typography>
             </div>
           </TimelineHeader>
@@ -156,7 +156,7 @@ export default function TimelineView() {
                   href="https://spl.solana.com/token-upgrade"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-yellow-600 underline hover:text-yellow-800"
+                  className="text-green-600 underline hover:text-black"
                 >
                   SPL Token 2022 upgrade
                 </a>
@@ -172,7 +172,7 @@ export default function TimelineView() {
             </TimelineIcon>
             <div className="flex flex-col gap-1 text-left">
               <Typography variant="h6" style={{ color: "#111827" }}>
-                NotWallet Release
+                NotWallet v1 Release
               </Typography>
               <Typography variant="small" style={{ color: "#111827" }} className="font-normal">
                 2026, Q1. Non-custodial Solana stablecoin wallet released.{" "}
@@ -196,11 +196,18 @@ export default function TimelineView() {
             </TimelineIcon>
             <div className="flex flex-col gap-1 text-left">
               <Typography variant="h6" style={{ color: "#9932CC" }}>
-                NotExchange Launch
+                NotDAX Digital Assets Exchange
               </Typography>
               <Typography variant="small" color="gray" className="font-normal">
-                {" "}
-                2026, Q3. Digital assets exchange.
+                2026, Q3.{" "}
+                <a
+                  href="https://notdax.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-600 underline hover:text-purple-800"
+                >
+                  Visit NotDAX
+                </a>
               </Typography>
             </div>
           </TimelineHeader>
@@ -216,7 +223,7 @@ export default function TimelineView() {
                 12th burn
               </Typography>
               <Typography variant="small" color="gray" className="font-normal">
-                Target total supply 1,212,121.2
+                Target total supply: 1,212,121.2
               </Typography>
             </div>
           </TimelineHeader>

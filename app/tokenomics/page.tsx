@@ -68,6 +68,11 @@ export default function TokenomicsPage() {
               The governance and utility token of The Stable Foundation DAO. Designed for transparency and community
               ownership.
             </p>
+            <p className="mx-auto mb-8 max-w-3xl text-base leading-relaxed font-light text-gray-600 sm:text-lg md:text-xl dark:text-gray-300">
+              Early participants in the €BACH ecosystem are positioned to receive greater benefits as the network
+              expands. At the same time, the project remains committed to decentralization, ensuring that opportunities
+              and governance are distributed fairly as adoption increases.
+            </p>
           </div>
         </div>
       </section>
