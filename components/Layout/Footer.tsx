@@ -59,7 +59,7 @@ export default function Footer() {
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Whitepaper
-                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700">WIP</span>
+                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">WIP</span>
                   </Link>
                 </li>
                 <li>
@@ -70,7 +70,7 @@ export default function Footer() {
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Documentation
-                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700">WIP</span>
+                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">WIP</span>
                   </Link>
                 </li>
               </ul>
@@ -86,7 +86,9 @@ export default function Footer() {
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     NotWallet non-custodial wallet
-                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700">Beta</span>
+                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">
+                      Beta
+                    </span>
                   </Link>
                 </li>
                 <li>
@@ -117,7 +119,7 @@ export default function Footer() {
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Launch dApp
-                    <span className="rounded bg-orange-100 px-1.5 py-0.5 text-xs font-medium text-orange-700">WIP</span>
+                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">WIP</span>
                   </Link>
                 </li>
                 <li>
@@ -128,7 +130,9 @@ export default function Footer() {
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Universe API
-                    <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-700">Beta</span>
+                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">
+                      Beta
+                    </span>
                   </Link>
                 </li>
               </ul>
