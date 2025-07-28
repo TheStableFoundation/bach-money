@@ -1,9 +1,40 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
+import { useTheme } from "../ThemeProvider"
+
+function DarkModeSwitcher() {
+  const { theme, toggleTheme } = useTheme()
+
+  return (
+    <button
+      onClick={toggleTheme}
+      className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:bg-gray-900 dark:text-gray-100"
+      aria-label="Toggle dark mode"
+      type="button"
+    >
+      {theme === "dark" ? (
+        <>
+          <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+          </svg>
+          <span>Dark</span>
+        </>
+      ) : (
+        <>
+          <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 2a1 1 0 011 1v2a1 1 0 11-2 0V3a1 1 0 011-1zm4.22 2.22a1 1 0 011.42 1.42l-1.42 1.42a1 1 0 01-1.42-1.42l1.42-1.42zM18 10a1 1 0 01-1 1h-2a1 1 0 110-2h2a1 1 0 011 1zm-2.22 5.78a1 1 0 00-1.42-1.42l-1.42 1.42a1 1 0 101.42 1.42l1.42-1.42zM10 18a1 1 0 01-1-1v-2a1 1 0 112 0v2a1 1 0 01-1 1zm-5.78-2.22a1 1 0 001.42-1.42l-1.42-1.42a1 1 0 10-1.42 1.42l1.42 1.42zM2 10a1 1 0 011-1h2a1 1 0 110 2H3a1 1 0 01-1-1zm2.22-5.78a1 1 0 00-1.42 1.42l1.42 1.42a1 1 0 101.42-1.42L4.22 4.22z" />
+          </svg>
+          <span>Light</span>
+        </>
+      )}
+    </button>
+  )
+}
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-100 bg-gray-50/50">
+    <footer className="border-t border-gray-100 bg-gray-50/50 dark:bg-gray-900">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-3">
           {/* Brand section */}
@@ -148,11 +179,11 @@ export default function Footer() {
         {/* Bottom section */}
         <div className="mt-12 border-t border-gray-200 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
               © {new Date().getFullYear()} The Stable Foundation. Powered by{" "}
               <a
                 href="https://smbcloud.xyz/"
-                className="font-medium text-gray-700 transition-colors hover:text-gray-900"
+                className="font-medium text-gray-700 transition-colors hover:text-gray-900 dark:text-gray-200 dark:hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -162,10 +193,10 @@ export default function Footer() {
             </p>
 
             <div className="flex items-center gap-6">
-              <span className="text-sm text-gray-500">
+              <span className="text-sm text-gray-500 dark:text-gray-400">
                 We love open source <span style={{ color: "#9932CC" }}>💜</span>
               </span>
-
+              <DarkModeSwitcher />
               <div className="flex items-center gap-4">
                 <a
                   href="https://github.com/TheStableFoundation"

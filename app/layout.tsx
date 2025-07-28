@@ -1,4 +1,5 @@
 import "styles/tailwind.css"
+import { ThemeProvider } from "../components/ThemeProvider"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -13,7 +14,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-touch-fullscreen" content="yes" />
       </head>
-      <body className="tap-highlight-transparent touch-manipulation overscroll-contain">{children}</body>
+      <body className="tap-highlight-transparent touch-manipulation overscroll-contain">
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   )
 }

@@ -4,6 +4,7 @@ const withMT = require("@material-tailwind/react/utils/withMT")
 
 /** @type {import('tailwindcss').Config} */
 module.exports = withMT({
+  darkMode: "class",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -26,6 +27,19 @@ module.exports = withMT({
           700: "#334155",
           800: "#1e293b",
           900: "#0f172a",
+          // Dark mode overrides
+          dark: {
+            50: "#18181b",
+            100: "#27272a",
+            200: "#3f3f46",
+            300: "#52525b",
+            400: "#71717a",
+            500: "#a1a1aa",
+            600: "#d4d4d8",
+            700: "#e4e4e7",
+            800: "#f4f4f5",
+            900: "#fafafa",
+          },
         },
         gray: {
           50: "#fafafa",
@@ -39,6 +53,19 @@ module.exports = withMT({
           800: "#27272a",
           900: "#18181b",
           950: "#09090b",
+          // Dark mode overrides
+          dark: {
+            50: "#09090b",
+            100: "#18181b",
+            200: "#27272a",
+            300: "#3f3f46",
+            400: "#52525b",
+            500: "#71717a",
+            600: "#a1a1aa",
+            700: "#d4d4d8",
+            800: "#e4e4e7",
+            900: "#fafafa",
+          },
         },
       },
       fontFamily: {
