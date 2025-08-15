@@ -60,6 +60,14 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
+                    href="/terms-of-service"
+                    className="text-sm text-gray-600 transition-colors hover:text-gray-900"
+                  >
+                    Terms of Service
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/whitepaper"
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
