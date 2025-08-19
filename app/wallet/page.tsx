@@ -3,13 +3,13 @@ import Link from "next/link"
 import Footer from "../../components/Layout/Footer"
 
 export const metadata: Metadata = {
-  title: "Not Wallet for Solana | Non-custodial Stablecoin Crypto Wallet",
+  title: "NotWallet Crypto for Solana | Non-custodial Stablecoin Crypto Wallet",
   description:
-    "Download Not Wallet for Solana – a minimal, non-custodial stablecoin wallet. Available on iOS TestFlight and Google Play. Your keys, your coins.",
+    "Download NotWallet Crypto for Solana – a minimal, non-custodial stablecoin wallet. Available on iOS TestFlight and Google Play. Your keys, your coins.",
   openGraph: {
-    title: "Not Wallet for Solana | Non-custodial Stablecoin Crypto Wallet",
+    title: "NotWallet Crypto for Solana | Non-custodial Stablecoin Crypto Wallet",
     description:
-      "Download Not Wallet for Solana – a minimal, non-custodial stablecoin wallet. Available on iOS TestFlight and Google Play. Your keys, your coins.",
+      "Download NotWallet Crypto for Solana – a minimal, non-custodial stablecoin wallet. Available on iOS TestFlight and Google Play. Your keys, your coins.",
     url: "https://bach.money/wallet",
     type: "website",
     images: [
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Not Wallet for Solana | Non-custodial Stablecoin Crypto Wallet",
+    title: "NotWallet Crypto for Solana | Non-custodial Stablecoin Crypto Wallet",
     description:
-      "Download Not Wallet for Solana – a minimal, non-custodial stablecoin wallet. Available on iOS TestFlight and Google Play. Your keys, your coins.",
+      "Download NotWallet Crypto for Solana – a minimal, non-custodial stablecoin wallet. Available on iOS TestFlight and Google Play. Your keys, your coins.",
     images: ["https://station.jup.ag/assets/images/full-routing-banner-98ca8b117cc86aa7d4fadf45b56d5a7c.png"],
   },
 }
@@ -58,7 +58,7 @@ export default function WalletPage() {
             </div>
 
             <h1 className="mb-6 text-4xl font-light tracking-tight text-gray-900 sm:mb-8 sm:text-5xl md:text-6xl dark:text-white">
-              Not Wallet
+              NotWallet Crypto
               <span className="mt-1 block text-3xl font-extralight text-gray-500 sm:mt-2 sm:text-4xl md:text-5xl dark:text-gray-400">
                 for Solana
               </span>
@@ -76,7 +76,7 @@ export default function WalletPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="text-center">
             <h2 className="mb-12 text-2xl font-light text-gray-900 sm:mb-16 sm:text-3xl md:text-4xl dark:text-white">
-              Why Not Wallet?
+              Why NotWallet Crypto?
             </h2>
 
             <div className="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-16">
@@ -145,13 +145,14 @@ export default function WalletPage() {
       <section className="border-t border-gray-100 py-16 sm:py-20 dark:border-gray-800">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
           <div className="mb-6 sm:mb-8">
-            <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl dark:text-white">Get Not Wallet</h2>
+            <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl dark:text-white">Get NotWallet Crypto</h2>
             <p className="mx-auto mb-6 max-w-2xl text-base text-gray-500 sm:mb-8 sm:text-lg dark:text-gray-400">
-              Available on iOS TestFlight for public beta testing, or build from source on GitHub.
+              Available on the Google Play Store, macOS TestFlight, desktops (Windows, Linux, macOS), or build from
+              source on GitHub.
             </p>
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
               <a
-                href="https://testflight.apple.com/join/UpvJyCQY"
+                href="https://testflight.apple.com/join/ArwPA3QR"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="dark:hover:bg-gray-100btn-nordic btn-nordic-primary inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800 sm:w-auto dark:bg-white dark:text-gray-900"
@@ -159,7 +160,7 @@ export default function WalletPage() {
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M17.564 7.792c-1.012-1.205-2.44-1.36-2.495-1.364-1.06-.107-2.07.62-2.62.62-.555 0-1.44-.604-2.37-.588-1.215.02-2.34.707-2.97 1.797-1.27 2.2-.324 5.45.91 7.23.603.89 1.32 1.89 2.26 1.85.91-.037 1.25-.59 2.34-.59 1.09 0 1.39.59 2.36.57.97-.02 1.58-.9 2.18-1.79.38-.56.52-.85.81-1.49-2.13-.82-2.05-3.01.41-3.34-.07-.29-.14-.58-.25-.85zm-2.18-2.37c.48-.58.81-1.39.72-2.19-.7.03-1.54.46-2.04 1.04-.45.52-.85 1.36-.7 2.16.75.06 1.52-.38 2.02-1.01z" />
                 </svg>
-                Try Public Beta (iOS)
+                Try Public Beta (macOS)
               </a>
               <a
                 href="https://github.com/TheStableFoundation/not"
@@ -177,7 +178,7 @@ export default function WalletPage() {
                 View on GitHub
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=xyz.notwallet.NotWallet"
+                href="https://play.google.com/apps/internaltest/4701097825510813478"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-nordic btn-nordic-secondary w-full sm:w-auto"
