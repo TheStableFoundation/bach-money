@@ -3,9 +3,9 @@ import Link from "next/link"
 import Footer from "../../components/Layout/Footer"
 
 export const metadata: Metadata = {
-  title: "BACH Token Airdrop | Not Wallet Non-custodial Stablecoin Crypto Wallet",
+  title: "BACH Token Airdrop | NotWallet Crypto Non-custodial Stablecoin Crypto Wallet",
   description:
-    "Claim up to 10.99 BACH tokens airdropped to your Not Wallet non-custodial stablecoin crypto wallet address. Register up to 5 Solana public keys and verify ownership via Not Wallet.",
+    "Claim up to 10.99 BACH tokens airdropped to your NotWallet Crypto non-custodial stablecoin crypto wallet address. Register up to 5 Solana public keys and verify ownership via NotWallet Crypto.",
 }
 
 export default function AirdropPage() {
@@ -49,7 +49,7 @@ export default function AirdropPage() {
                 href="/wallet"
                 className="border-b border-dotted border-blue-300 font-medium text-blue-600 transition-colors hover:text-blue-700"
               >
-                Not Wallet
+                NotWallet Crypto
               </Link>{" "}
               address.
             </p>
@@ -72,7 +72,7 @@ export default function AirdropPage() {
                 <p className="text-sm leading-relaxed text-gray-500 sm:text-base">
                   Get the{" "}
                   <Link href="/wallet" className="font-medium text-blue-600 hover:text-blue-700">
-                    Not Wallet
+                    NotWallet Crypto
                   </Link>{" "}
                   app
                 </p>
@@ -129,7 +129,7 @@ export default function AirdropPage() {
                   <span>
                     Each eligible{" "}
                     <Link href="/wallet" className="font-medium text-blue-600 hover:text-blue-700">
-                      Not Wallet
+                      NotWallet Crypto
                     </Link>{" "}
                     address can receive up to <strong>10.99 BACH</strong> tokens
                   </span>
@@ -158,7 +158,7 @@ export default function AirdropPage() {
                   <span>
                     Each public key must sign a verification message from within the{" "}
                     <Link href="/wallet" className="font-medium text-blue-600 hover:text-blue-700">
-                      Not Wallet
+                      NotWallet Crypto
                     </Link>{" "}
                     app to prove ownership
                   </span>
@@ -187,7 +187,7 @@ export default function AirdropPage() {
             <p className="mx-auto mb-6 max-w-2xl text-base text-gray-500 sm:mb-8 sm:text-lg">
               Make sure to use your{" "}
               <Link href="/wallet" className="font-medium text-blue-600 hover:text-blue-700">
-                Not Wallet
+                NotWallet Crypto
               </Link>{" "}
               to sign the verification message for each address!
             </p>
@@ -196,7 +196,7 @@ export default function AirdropPage() {
                 href="/wallet"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800 sm:w-auto"
               >
-                Get Not Wallet
+                Get NotWallet Crypto
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"

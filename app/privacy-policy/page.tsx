@@ -3,13 +3,13 @@ import Link from "next/link"
 import Footer from "../../components/Layout/Footer"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Not Wallet by The Stable Foundation",
+  title: "Privacy Policy | NotWallet Crypto by The Stable Foundation",
   description:
-    "Read the privacy policy for Not Wallet, a non-custodial stablecoin crypto wallet built on Solana. Learn how your data is protected and our commitment to privacy.",
+    "Read the privacy policy for NotWallet Crypto, a non-custodial stablecoin crypto wallet built on Solana. Learn how your data is protected and our commitment to privacy.",
   openGraph: {
-    title: "Privacy Policy | Not Wallet by The Stable Foundation",
+    title: "Privacy Policy | NotWallet Crypto by The Stable Foundation",
     description:
-      "Read the privacy policy for Not Wallet, a non-custodial stablecoin crypto wallet built on Solana. Learn how your data is protected and our commitment to privacy.",
+      "Read the privacy policy for NotWallet Crypto, a non-custodial stablecoin crypto wallet built on Solana. Learn how your data is protected and our commitment to privacy.",
     url: "https://bach.money/privacy-policy",
     type: "website",
     images: [
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy | Not Wallet by The Stable Foundation",
+    title: "Privacy Policy | NotWallet Crypto by The Stable Foundation",
     description:
-      "Read the privacy policy for Not Wallet, a non-custodial stablecoin crypto wallet built on Solana. Learn how your data is protected and our commitment to privacy.",
+      "Read the privacy policy for NotWallet Crypto, a non-custodial stablecoin crypto wallet built on Solana. Learn how your data is protected and our commitment to privacy.",
     images: ["https://bach.money/app-icon-v2.svg"],
   },
 }
@@ -61,7 +61,7 @@ export default function PrivacyPolicyPage() {
             <h1 className="mb-6 text-4xl font-light tracking-tight text-gray-900 sm:mb-8 sm:text-5xl md:text-6xl dark:text-white">
               Privacy Policy
               <span className="mt-1 block text-3xl font-extralight text-gray-500 sm:mt-2 sm:text-4xl md:text-5xl dark:text-gray-400">
-                for Not Wallet
+                for NotWallet Crypto
               </span>
             </h1>
 
@@ -81,9 +81,9 @@ export default function PrivacyPolicyPage() {
                 <strong>Effective Date:</strong> {new Date().getFullYear()}-01-01
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                <strong>Not Wallet</strong> is a non-custodial stablecoin crypto wallet built on the Solana blockchain
-                by The Stable Foundation. We are committed to protecting your privacy and ensuring transparency about
-                how your information is handled.
+                <strong>NotWallet Crypto</strong> is a non-custodial stablecoin crypto wallet built on the Solana
+                blockchain by The Stable Foundation. We are committed to protecting your privacy and ensuring
+                transparency about how your information is handled.
               </p>
             </div>
 
@@ -93,9 +93,9 @@ export default function PrivacyPolicyPage() {
                   1. No Personal Data Collection
                 </h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  Not Wallet does <strong>not</strong> collect, store, or process any personal data, such as your name,
-                  email address, or phone number. All wallet keys and sensitive information remain on your device and
-                  are never transmitted to our servers.
+                  NotWallet Crypto does <strong>not</strong> collect, store, or process any personal data, such as your
+                  name, email address, or phone number. All wallet keys and sensitive information remain on your device
+                  and are never transmitted to our servers.
                 </p>
               </div>
 
@@ -103,15 +103,15 @@ export default function PrivacyPolicyPage() {
                 <h2 className="mb-6 text-2xl font-light text-gray-900 dark:text-white">2. Blockchain Data</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
                   All transactions and wallet activity are recorded on the public Solana blockchain. This data is
-                  publicly accessible and not controlled by Not Wallet or The Stable Foundation.
+                  publicly accessible and not controlled by NotWallet Crypto or The Stable Foundation.
                 </p>
               </div>
 
               <div>
                 <h2 className="mb-6 text-2xl font-light text-gray-900 dark:text-white">3. Analytics & Cookies</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  Not Wallet does not use cookies or analytics tools to track your activity. We do not profile users or
-                  share any data with third parties.
+                  NotWallet Crypto does not use cookies or analytics tools to track your activity. We do not profile
+                  users or share any data with third parties.
                 </p>
               </div>
 
