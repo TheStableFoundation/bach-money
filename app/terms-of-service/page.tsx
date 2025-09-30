@@ -3,13 +3,13 @@ import Link from "next/link"
 import Footer from "../../components/Layout/Footer"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Not Wallet by The Stable Foundation",
+  title: "Terms of Service | NotWallet Crypto by The Stable Foundation",
   description:
-    "Read the terms of service for Not Wallet, a non-custodial stablecoin crypto wallet built on Solana. Understand your rights and responsibilities.",
+    "Read the terms of service for NotWallet Crypto, a non-custodial stablecoin crypto wallet built on Solana. Understand your rights and responsibilities.",
   openGraph: {
-    title: "Terms of Service | Not Wallet by The Stable Foundation",
+    title: "Terms of Service | NotWallet Crypto by The Stable Foundation",
     description:
-      "Read the terms of service for Not Wallet, a non-custodial stablecoin crypto wallet built on Solana. Understand your rights and responsibilities.",
+      "Read the terms of service for NotWallet Crypto, a non-custodial stablecoin crypto wallet built on Solana. Understand your rights and responsibilities.",
     url: "https://bach.money/terms-of-service",
     type: "website",
     images: [
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Terms of Service | Not Wallet by The Stable Foundation",
+    title: "Terms of Service | NotWallet Crypto by The Stable Foundation",
     description:
-      "Read the terms of service for Not Wallet, a non-custodial stablecoin crypto wallet built on Solana. Understand your rights and responsibilities.",
+      "Read the terms of service for NotWallet Crypto, a non-custodial stablecoin crypto wallet built on Solana. Understand your rights and responsibilities.",
     images: ["https://bach.money/app-icon-v2.svg"],
   },
 }
@@ -61,7 +61,7 @@ export default function TermsOfServicePage() {
             <h1 className="mb-6 text-4xl font-light tracking-tight text-gray-900 sm:mb-8 sm:text-5xl md:text-6xl dark:text-white">
               Terms of Service
               <span className="mt-1 block text-3xl font-extralight text-gray-500 sm:mt-2 sm:text-4xl md:text-5xl dark:text-gray-400">
-                for Not Wallet
+                for NotWallet Crypto
               </span>
             </h1>
 
@@ -81,9 +81,9 @@ export default function TermsOfServicePage() {
                 <strong>Effective Date:</strong> {new Date().getFullYear()}-01-01
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                These Terms of Service govern your use of <strong>Not Wallet</strong>, a non-custodial cryptocurrency
-                wallet application developed by The Stable Foundation for the Solana blockchain. By using Not Wallet,
-                you agree to these terms.
+                These Terms of Service govern your use of <strong>NotWallet Crypto</strong>, a non-custodial
+                cryptocurrency wallet application developed by The Stable Foundation for the Solana blockchain. By using
+                NotWallet Crypto, you agree to these terms.
               </p>
             </div>
 
@@ -91,16 +91,16 @@ export default function TermsOfServicePage() {
               <div>
                 <h2 className="mb-6 text-2xl font-light text-gray-900 dark:text-white">1. Acceptance of Terms</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  By downloading, installing, or using Not Wallet, you acknowledge that you have read, understood, and
-                  agree to be bound by these Terms of Service. If you do not agree to these terms, you must not use the
-                  application.
+                  By downloading, installing, or using NotWallet Crypto, you acknowledge that you have read, understood,
+                  and agree to be bound by these Terms of Service. If you do not agree to these terms, you must not use
+                  the application.
                 </p>
               </div>
 
               <div>
                 <h2 className="mb-6 text-2xl font-light text-gray-900 dark:text-white">2. Non-Custodial Nature</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  Not Wallet is a <strong>non-custodial</strong> wallet. This means:
+                  NotWallet Crypto is a <strong>non-custodial</strong> wallet. This means:
                 </p>
                 <ul className="mt-4 space-y-2 text-lg text-gray-600 dark:text-gray-300">
                   <li>• You have complete control and responsibility for your private keys and seed phrases</li>
@@ -113,7 +113,7 @@ export default function TermsOfServicePage() {
               <div>
                 <h2 className="mb-6 text-2xl font-light text-gray-900 dark:text-white">3. User Responsibilities</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  As a user of Not Wallet, you are responsible for:
+                  As a user of NotWallet Crypto, you are responsible for:
                 </p>
                 <ul className="mt-4 space-y-2 text-lg text-gray-600 dark:text-gray-300">
                   <li>• Securing your device and wallet credentials</li>
@@ -126,7 +126,7 @@ export default function TermsOfServicePage() {
 
               <div>
                 <h2 className="mb-6 text-2xl font-light text-gray-900 dark:text-white">4. Prohibited Uses</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300">You may not use Not Wallet for:</p>
+                <p className="text-lg text-gray-600 dark:text-gray-300">You may not use NotWallet Crypto for:</p>
                 <ul className="mt-4 space-y-2 text-lg text-gray-600 dark:text-gray-300">
                   <li>• Any illegal activities or transactions</li>
                   <li>• Money laundering, terrorist financing, or other illicit financial activities</li>
@@ -154,15 +154,15 @@ export default function TermsOfServicePage() {
                 <h2 className="mb-6 text-2xl font-light text-gray-900 dark:text-white">6. Limitation of Liability</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
                   The Stable Foundation shall not be liable for any direct, indirect, incidental, special, or
-                  consequential damages resulting from your use of Not Wallet, including but not limited to loss of
-                  funds, lost profits, or loss of data. Your use of the application is at your own risk.
+                  consequential damages resulting from your use of NotWallet Crypto, including but not limited to loss
+                  of funds, lost profits, or loss of data. Your use of the application is at your own risk.
                 </p>
               </div>
 
               <div>
                 <h2 className="mb-6 text-2xl font-light text-gray-900 dark:text-white">7. Age Restrictions</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  You must be at least 18 years old to use Not Wallet. By using the application, you represent and
+                  You must be at least 18 years old to use NotWallet Crypto. By using the application, you represent and
                   warrant that you are of legal age to form a binding contract.
                 </p>
               </div>
@@ -171,7 +171,7 @@ export default function TermsOfServicePage() {
                 <h2 className="mb-6 text-2xl font-light text-gray-900 dark:text-white">8. Updates and Modifications</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
                   We may update these Terms of Service from time to time. Any changes will be posted on this page with
-                  an updated effective date. Your continued use of Not Wallet after any modifications constitutes
+                  an updated effective date. Your continued use of NotWallet Crypto after any modifications constitutes
                   acceptance of the updated terms.
                 </p>
               </div>
@@ -179,8 +179,8 @@ export default function TermsOfServicePage() {
               <div>
                 <h2 className="mb-6 text-2xl font-light text-gray-900 dark:text-white">9. Termination</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  You may stop using Not Wallet at any time by deleting the application from your device. These terms
-                  will remain in effect regarding your prior use of the application.
+                  You may stop using NotWallet Crypto at any time by deleting the application from your device. These
+                  terms will remain in effect regarding your prior use of the application.
                 </p>
               </div>
 
