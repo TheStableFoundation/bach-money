@@ -17,7 +17,7 @@ export default function Footer() {
             </p>
             <div className="mt-6">
               <Link
-                href="https://www.birdeye.so/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
+                href="https://www.birdeye.so/solana/token/CTQBjyrX8pYyqbNa8vAhQfnRXfu9cUxnvrxj5PvbzTmf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block opacity-60 transition-opacity hover:opacity-100"
@@ -99,7 +99,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="/wallet"
+                    href="https://notwallet.eu"
                     title="NotWallet non-custodial Solana crypto stablecoin wallet"
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
@@ -114,7 +114,6 @@ export default function Footer() {
                     className="inline-flex items-center gap-2 text-sm text-purple-600 transition-colors hover:text-purple-800"
                   >
                     NotDAX Digital Assets Exchange
-                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">WIP</span>
                   </Link>
                 </li>
                 <li>
@@ -135,20 +134,6 @@ export default function Footer() {
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Launch dApp
-                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">WIP</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://api.musik88.com/login"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
-                  >
-                    Universe API
-                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">
-                      Beta
-                    </span>
                   </Link>
                 </li>
               </ul>

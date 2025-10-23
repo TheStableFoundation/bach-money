@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "NotWallet Crypto for Solana | Non-custodial Stablecoin Crypto Wallet",
     description:
       "Download NotWallet Crypto for Solana – a minimal, non-custodial stablecoin wallet. Available on iOS TestFlight and Google Play. Your keys, your coins.",
-    url: "https://bach.money/wallet",
+    url: "https://notwallet.eu",
     type: "website",
     images: [
       {
