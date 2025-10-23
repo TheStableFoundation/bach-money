@@ -95,7 +95,7 @@ export default function TimelineView() {
             </TimelineIcon>
             <div className="flex flex-col gap-1 text-left">
               <Typography variant="h6" color="blue-gray">
-                €BACH token minted.
+                €BACH was minted.
               </Typography>
               <Typography variant="small" color="gray" className="font-normal">
                 December 31, 2021. Total supply 18,419,500.{" "}
@@ -113,7 +113,7 @@ export default function TimelineView() {
             <div className="flex flex-col gap-1 text-left">
               <div className="flex items-center gap-2">
                 <Typography variant="h6" color="blue-gray">
-                  €BACH Community bootstrapping
+                  €BACH Community
                 </Typography>
                 <span className="rounded-full bg-purple-200 px-3 py-1 text-xs font-semibold text-purple-700 shadow">
                   We are here
@@ -121,6 +121,30 @@ export default function TimelineView() {
               </div>
               <Typography variant="small" color="gray" className="font-normal">
                 2021 - 2025. Airdrops, token burn, liquidity.
+              </Typography>
+            </div>
+          </TimelineHeader>
+        </TimelineItem>
+        <TimelineItem className="h-28">
+          <TimelineConnector className="!w-[78px]" />
+          <TimelineHeader className="border-blue-gray-50 shadow-blue-gray-900/5 relative rounded-xl border bg-white py-3 pr-8 pl-4 shadow-lg">
+            <TimelineIcon className="p-3" variant="ghost" color="green">
+              <GlobeAltIcon className="h-5 w-5" />
+            </TimelineIcon>
+            <div className="flex flex-col gap-1 text-left">
+              <Typography variant="h6" style={{ color: "#111827" }}>
+                NotWallet Crypto v1 Release
+              </Typography>
+              <Typography variant="small" style={{ color: "#111827" }} className="font-normal">
+                Visit{" "}
+                <a
+                  href="https://notwallet.eu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-600 underline hover:text-green-800"
+                >
+                  NotWallet Crypto non-custodial Solana stablecoin wallet.
+                </a>
               </Typography>
             </div>
           </TimelineHeader>
@@ -144,12 +168,33 @@ export default function TimelineView() {
         <TimelineItem className="h-28">
           <TimelineConnector className="!w-[78px]" />
           <TimelineHeader className="border-blue-gray-50 shadow-blue-gray-900/5 relative rounded-xl border bg-white py-3 pr-8 pl-4 shadow-lg">
+            <TimelineIcon className="p-3" variant="ghost" color="purple">
+              <FireIcon className="h-5 w-5 text-purple-600" />
+            </TimelineIcon>
+            <div className="flex flex-col gap-1 text-left">
+              <div className="flex items-center gap-2">
+                <Typography variant="h6" style={{ color: "#9932CC" }}>
+                  ICO Preparation
+                </Typography>
+                <span className="rounded-full bg-purple-200 px-3 py-1 text-xs font-semibold text-purple-700 shadow">
+                  We are here
+                </span>
+              </div>
+              <Typography variant="small" color="gray" className="font-normal">
+                Non-profit organization, IPs coordination, legal stuff, and more.
+              </Typography>
+            </div>
+          </TimelineHeader>
+        </TimelineItem>
+        <TimelineItem className="h-28">
+          <TimelineConnector className="!w-[78px]" />
+          <TimelineHeader className="border-blue-gray-50 shadow-blue-gray-900/5 relative rounded-xl border bg-white py-3 pr-8 pl-4 shadow-lg">
             <TimelineIcon className="p-3" variant="ghost" color="yellow">
               <CurrencyDollarIcon className="h-5 w-5 text-yellow-500" />
             </TimelineIcon>
             <div className="flex flex-col gap-1 text-left">
               <Typography variant="h6" style={{ color: "#111827" }}>
-                Token upgrade
+                Token Upgrade
               </Typography>
               <Typography variant="small" style={{ color: "#111827" }} className="font-normal">
                 <a
@@ -159,30 +204,6 @@ export default function TimelineView() {
                   className="text-green-600 underline hover:text-black"
                 >
                   SPL Token 2022 upgrade
-                </a>
-              </Typography>
-            </div>
-          </TimelineHeader>
-        </TimelineItem>
-        <TimelineItem className="h-28">
-          <TimelineConnector className="!w-[78px]" />
-          <TimelineHeader className="border-blue-gray-50 shadow-blue-gray-900/5 relative rounded-xl border bg-white py-3 pr-8 pl-4 shadow-lg">
-            <TimelineIcon className="p-3" variant="ghost" color="green">
-              <GlobeAltIcon className="h-5 w-5" />
-            </TimelineIcon>
-            <div className="flex flex-col gap-1 text-left">
-              <Typography variant="h6" style={{ color: "#111827" }}>
-                NotWallet v1 Release
-              </Typography>
-              <Typography variant="small" style={{ color: "#111827" }} className="font-normal">
-                2026, Q1. Non-custodial Solana stablecoin wallet released.{" "}
-                <a
-                  href="https://github.com/TheStableFoundation/not"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-600 underline hover:text-green-800"
-                >
-                  View on GitHub
                 </a>
               </Typography>
             </div>
@@ -223,7 +244,7 @@ export default function TimelineView() {
                 12th burn
               </Typography>
               <Typography variant="small" color="gray" className="font-normal">
-                Target total supply: 1,212,121.2
+                Target total supply: 1,200,000
               </Typography>
             </div>
           </TimelineHeader>
