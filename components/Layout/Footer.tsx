@@ -128,7 +128,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="https://app.bach.money/"
+                    href="https://bachmoney-app.5mb.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
