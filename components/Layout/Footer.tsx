@@ -145,7 +145,11 @@ export default function Footer() {
         <div className="mt-12 border-t border-gray-200 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} The Stable Foundation. Powered by{" "}
+              © {new Date().getFullYear()}{" "}
+              <a href="https://www.thestablefoundation.org/" target="__blank">
+                The Stable Foundation
+              </a>
+              . Powered by{" "}
               <a
                 href="https://smbcloud.xyz/"
                 className="font-medium text-gray-700 transition-colors hover:text-gray-900"
