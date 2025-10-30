@@ -30,14 +30,12 @@ export default function Web() {
         <div className="mx-auto max-w-6xl px-6 py-3">
           <div className="text-center">
             <Link
-              href="/airdrop"
+              href="https://drive.google.com/file/d/1iD5Fs9xkWS_TdwGF5kV1-vHq0yye0h9X/view"
+              target="__blank"
               className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
             >
               <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-green-400"></span>
-              BACH Token Airdrop: Claim up to 10.99 BACH
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-              </svg>
+              The Stable Foundation whitepaper v1.0.0
             </Link>
           </div>
         </div>

@@ -244,7 +244,7 @@ export default function TimelineView() {
                 12th burn
               </Typography>
               <Typography variant="small" color="gray" className="font-normal">
-                Target total supply: 1,200,000
+                Target total supply: 2,100,000
               </Typography>
             </div>
           </TimelineHeader>

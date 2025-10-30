@@ -73,11 +73,11 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/whitepaper"
+                    href="https://drive.google.com/file/d/1iD5Fs9xkWS_TdwGF5kV1-vHq0yye0h9X/view"
+                    target="__blank"
                     className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Whitepaper
-                    <span className="rounded bg-purple-200 px-1.5 py-0.5 text-xs font-medium text-purple-700">WIP</span>
                   </Link>
                 </li>
                 <li>
