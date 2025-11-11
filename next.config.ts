@@ -17,6 +17,10 @@ const config: NextConfig = {
         hostname: "raw.githubusercontent.com",
         pathname: "/",
       },
+      {
+        protocol: "https",
+        hostname: "img.youtube.com",
+      },
     ],
   },
   rewrites: async () => [

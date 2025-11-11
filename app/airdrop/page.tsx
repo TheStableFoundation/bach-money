@@ -1,11 +1,12 @@
 import { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import Footer from "../../components/Layout/Footer"
 
 export const metadata: Metadata = {
   title: "BACH Token Airdrop | NotWallet Crypto Non-custodial Stablecoin Crypto Wallet",
   description:
-    "Claim up to 10.99 BACH tokens airdropped to your NotWallet Crypto non-custodial stablecoin crypto wallet address. Register up to 5 Solana public keys and verify ownership via NotWallet Crypto.",
+    "Claim up to 10.99 BACH tokens to your NotWallet Crypto non-custodial stablecoin crypto wallet address. Download the NotWallet Crypto app and claim your airdrop",
 }
 
 export default function AirdropPage() {
@@ -25,9 +26,8 @@ export default function AirdropPage() {
           </Link>
         </div>
       </section>
-
       {/* Hero section */}
-      <section className="py-16 sm:py-24 md:py-32">
+      <section className="sm:py-24 md:py-32">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 sm:mb-8">
@@ -35,34 +35,54 @@ export default function AirdropPage() {
                 🎉 Active Airdrop
               </span>
             </div>
-
             <h1 className="mb-6 text-4xl font-light tracking-tight text-gray-900 sm:mb-8 sm:text-5xl md:text-6xl">
-              BACH Token
+              BACH Token Airdrop
               <span className="mt-1 block text-3xl font-extralight text-gray-500 sm:mt-2 sm:text-4xl md:text-5xl">
-                Airdrop
+                SplitFire AI x The Stable Foundation
               </span>
             </h1>
-
             <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed font-light text-gray-600 sm:text-xl md:text-2xl">
-              Claim up to <span className="font-medium text-blue-600">10.99 BACH</span> tokens directly to your{" "}
+              With a colloboration with SplitFire AI, claim your{" "}
+              <span className="font-medium text-blue-600">BACH Token governance token</span> tokens by being a{" "}
+              <Link
+                href="https://splitfire.ai/blog/two-of-us-data-provider"
+                className="border-b border-dotted border-blue-300 font-medium text-blue-600 transition-colors hover:text-blue-700"
+              >
+                Data Provider
+              </Link>{" "}
+              through our Data Provider Platform.
+            </p>
+            <div className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed font-light text-gray-600 sm:text-xl md:text-2xl">
+              <h2 className="mb-8 text-2xl font-light text-gray-900 sm:text-3xl md:text-4xl">How to Claim #1</h2>
+              <div className="flex justify-center">
+                <Link href="https://www.youtube.com/watch?v=kzOz5MztPYs" target="__blank">
+                  <Image
+                    src="https://img.youtube.com/vi/kzOz5MztPYs/maxresdefault.jpg"
+                    width={200}
+                    height={150}
+                    alt="Watch: Two of Us - Data Provider"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Requirements section */}
+      <section className="border-t border-gray-100 sm:py-20">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <div className="text-center">
+            <h2 className="mb-8 text-2xl font-light text-gray-900 sm:text-3xl md:text-4xl">How to Claim #2</h2>
+            <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed font-light text-gray-600 sm:text-xl md:text-2xl">
+              Claim up to <span className="font-medium text-blue-600">10.99 BACH</span> tokens through our{" "}
               <Link
                 href="https://notwallet.eu"
                 className="border-b border-dotted border-blue-300 font-medium text-blue-600 transition-colors hover:text-blue-700"
               >
                 NotWallet Crypto
               </Link>{" "}
-              address.
+              app.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Requirements section */}
-      <section className="border-t border-gray-100 py-16 sm:py-20">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <div className="text-center">
-            <h2 className="mb-8 text-2xl font-light text-gray-900 sm:text-3xl md:text-4xl">How to Claim</h2>
-
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               <div className="group text-center">
                 <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 transition-colors group-hover:bg-blue-100 sm:mb-6 sm:h-16 sm:w-16">
@@ -103,97 +123,28 @@ export default function AirdropPage() {
                   <span className="text-xl font-bold sm:text-2xl">4</span>
                 </div>
                 <h3 className="mb-3 text-lg font-medium text-gray-900 sm:mb-4 sm:text-xl">Claim</h3>
-                <p className="text-sm leading-relaxed text-gray-500 sm:text-base">Receive your BACH tokens</p>
+                <p className="text-sm leading-relaxed text-gray-500 sm:text-base">Wait for our ICO announcement</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Details section */}
-      <section className="border-t border-gray-100 py-16 sm:py-20">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <div className="text-center">
-            <h2 className="mb-8 text-2xl font-light text-gray-900 sm:text-3xl md:text-4xl">Airdrop Details</h2>
-
-            <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6 text-left sm:p-8">
-              <ul className="space-y-4 text-gray-600">
-                <li className="flex items-start gap-3">
-                  <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span>
-                    Each eligible{" "}
-                    <Link href="https://notwallet.eu" className="font-medium text-blue-600 hover:text-blue-700">
-                      NotWallet Crypto
-                    </Link>{" "}
-                    address can receive up to <strong>10.99 BACH</strong> tokens
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span>
-                    You may register up to <strong>5 unique Solana public keys</strong> (wallet addresses) for the
-                    airdrop
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span>
-                    Each public key must sign a verification message from within the{" "}
-                    <Link href="https://notwallet.eu" className="font-medium text-blue-600 hover:text-blue-700">
-                      NotWallet Crypto
-                    </Link>{" "}
-                    app to prove ownership
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span>Only the first 5 successfully verified public keys per user are eligible</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA section */}
       <section className="border-t border-gray-100 py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
           <div className="mb-6 sm:mb-8">
-            <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl">Ready to Claim?</h2>
+            <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl">Ready to Claim Your BACH Token?</h2>
             <p className="mx-auto mb-6 max-w-2xl text-base text-gray-500 sm:mb-8 sm:text-lg">
-              Make sure to use your{" "}
+              Choose your path. Make sure to{" "}
               <Link href="https://notwallet.eu" className="font-medium text-blue-600 hover:text-blue-700">
-                NotWallet Crypto
+                download NotWallet Crypto
               </Link>{" "}
-              to sign the verification message for each address!
+              if you choose the first path. Or you can do both.
             </p>
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
               <Link
                 href="https://notwallet.eu"
+                target="__blank"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800 sm:w-auto"
               >
                 Get NotWallet Crypto
@@ -207,10 +158,11 @@ export default function AirdropPage() {
                 </svg>
               </Link>
               <Link
-                href="/about"
+                href="https://api.musik88.com"
+                target="__blank"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 sm:w-auto"
               >
-                Learn More
+                Be A Data Provider
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
@@ -224,7 +176,6 @@ export default function AirdropPage() {
           </div>
         </div>
       </section>
-
       <Footer />
     </>
   )
