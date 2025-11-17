@@ -1,7 +1,7 @@
 
 ### Bach Money
 
-Bach Money is ***The Stable Foundation decentralized stablecoin platform*** parent project.
+Bach Money is ***The Stable Foundation decentralized stablecoin platform***. Let the Money Flow.
 
 ## Getting Started
 
